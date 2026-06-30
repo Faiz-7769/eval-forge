@@ -1,0 +1,553 @@
+question_id,question,answer,prompt_tokens,output_tokens,total_tokens,latency_sec,tokens_per_sec,gpu_usage_pct,gpu_temp_c,gpu_mem_used_mb
+0,"A train leaves Station A traveling at 60 mph. Two hours later, a second train leaves Station A on the same track traveling at 90 mph. How many hours will it take the second train to catch up to the first train?","To find out how long it will take the second train to catch up to the first, we can follow these steps:
+
+**1. Calculate the head start distance:**
+The first train travels at 60 mph for 2 hours before the second train leaves.
+*   Distance = Speed × Time
+*   Distance = 60 mph × 2 hours = **120 miles**
+
+**2. Determine the catch-up speed (relative speed):**
+Since both trains are moving in the same direction, the second train closes the gap at a rate equal to the difference in their speeds.
+*   Relative Speed = 90 mph - 60 mph = **30 mph**
+
+**3. Calculate the time to close the gap:**
+The second train needs to cover the 120-mile head start at a relative speed of 30 mph.
+*   Time = Distance / Relative Speed
+*   Time = 120 miles / 30 mph = **4 hours**
+
+**Answer:**
+It will take the second train **4 hours** to catch up to the first train.",51,236,287,1.4964,157.71,,,
+1,"If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?","To solve this, you need to look at the **intervals** between the strikes, not the strikes themselves.
+
+1.  When the clock strikes 6 times, there are **5 intervals** between those strikes (1st to 2nd, 2nd to 3rd, 3rd to 4th, 4th to 5th, 5th to 6th).
+2.  If 5 intervals take 5 seconds, then **each interval is 1 second long**.
+3.  When the clock strikes 12 times, there are **11 intervals** between the strikes.
+4.  Since each interval is 1 second, 11 intervals will take **11 seconds**.
+
+**Answer:** It will take 11 seconds.",26,165,191,1.4235,115.91,,,
+2,"All prompt engineers are tech enthusiasts. Some tech enthusiasts are gamers. No gamers are professional writers. Based on these rules, is it definitely true that some prompt engineers are not professional writers?","To determine if the statement ""some prompt engineers are not professional writers"" is definitely true, let’s break down the logic step-by-step:
+
+**The Rules:**
+1. All prompt engineers are tech enthusiasts. (PE ⊆ TE)
+2. Some tech enthusiasts are gamers. (TE ∩ G ≠ ∅)
+3. No gamers are professional writers. (G ∩ PW = ∅)
+
+**The Analysis:**
+*   We know that all prompt engineers are tech enthusiasts.
+*   We know that some tech enthusiasts are gamers. However, **we do not know if those specific tech enthusiasts are also prompt engineers.**
+*   It is possible that the group of ""tech enthusiasts who are gamers"" and the group of ""prompt engineers"" are entirely separate subsets of ""tech enthusiasts.""
+
+**Visualizing the possibilities:**
+*   **Scenario A:** Imagine a prompt engineer who is also a gamer. Because no gamers are professional writers, that specific prompt engineer is definitely not a professional writer. In this scenario, the statement is true.
+*   **Scenario B:** Imagine that all prompt engineers are tech enthusiasts who have *no interest* in gaming. In this scenario, there is no overlap between prompt engineers and gamers. Therefore, every prompt engineer could theoretically be a professional writer without violating any of the rules.
+
+**Conclusion:**
+Because we cannot guarantee that any prompt engineers are gamers, we cannot conclude that any prompt engineers are excluded from being professional writers.
+
+Therefore, the statement is **not definitely true.**",38,317,355,2.5519,124.22,,,
+3,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?,"The ball costs **$0.05** (5 cents).
+
+Here is the breakdown:
+*   If the ball costs **$0.05** and the bat costs **$1.00 more**, then the bat costs **$1.05**.
+*   $1.05 (bat) + $0.05 (ball) = **$1.10** total.",35,87,122,1.1382,76.44,,,
+4,"If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","It would take **5 minutes**.
+
+Here is the breakdown:
+*   If 5 machines make 5 widgets in 5 minutes, that means each individual machine is taking 5 minutes to make 1 widget.
+*   If you have 100 machines working simultaneously, each machine is still taking 5 minutes to make its own widget.
+*   Therefore, after 5 minutes, you will have 100 widgets.",33,92,125,1.391,66.14,,,
+5,"You are facing two doors. One leads to freedom, the other to certain doom. One guard stands at each door; one always lies, and the other always tells the truth. You do not know which is which. You can ask exactly one guard one question. What do you ask to find the door to freedom?","To find the door to freedom, you should point to one of the doors and ask either guard:
+
+**""If I were to ask the other guard if this door leads to freedom, what would they say?""**
+
+### How it works:
+
+Regardless of which guard you ask, the answer will always be the **opposite** of the truth.
+
+*   **If you are talking to the truth-teller:** They know the liar would lie, so they will accurately report the liar's false answer.
+*   **If you are talking to the liar:** They know the truth-teller would tell the truth, so they will lie about what the truth-teller would say.
+
+**The result:**
+*   If the guard says **""Yes,""** then the door you pointed to leads to **doom**.
+*   If the guard says **""No,""** then the door you pointed to leads to **freedom**.",65,191,256,1.6695,114.41,,,
+6,"A box contains 3 red apples and 7 green apples. If you select two apples at random without replacement, what is the probability that both are red?","To find the probability that both apples selected are red, we calculate the probability of each event occurring sequentially.
+
+**1. Probability of picking the first red apple:**
+There are a total of 10 apples (3 red + 7 green). The probability of picking a red apple on the first draw is:
+$$P(\text{First is Red}) = \frac{3}{10}$$
+
+**2. Probability of picking the second red apple:**
+Since the selection is made **without replacement**, there are now 9 apples left in the box, and only 2 of them are red. The probability of picking a red apple on the second draw, given that the first was red, is:
+$$P(\text{Second is Red} \mid \text{First is Red}) = \frac{2}{9}$$
+
+**3. Total probability:**
+To find the probability that both events happen, we multiply the two probabilities together:
+$$P(\text{Both Red}) = \frac{3}{10} \times \frac{2}{9}$$
+
+$$P(\text{Both Red}) = \frac{6}{90}$$
+
+**4. Simplify the fraction:**
+Dividing both the numerator and the denominator by 6:
+$$P(\text{Both Red}) = \frac{1}{15}$$
+
+**Final Answer:**
+The probability that both apples are red is **1/15** (or approximately **0.0667**).",33,313,346,2.8055,111.57,,,
+7,Solve for x: 3x + 7 = 22.,"To solve for **x** in the equation **3x + 7 = 22**, follow these steps:
+
+**Step 1: Subtract 7 from both sides of the equation to isolate the term with x.**
+3x + 7 - 7 = 22 - 7
+3x = 15
+
+**Step 2: Divide both sides by 3 to solve for x.**
+3x / 3 = 15 / 3
+**x = 5**
+
+***
+
+**Check your work:**
+Plug 5 back into the original equation:
+3(5) + 7 = 22
+15 + 7 = 22
+22 = 22 
+
+The answer is **x = 5**.",16,164,180,11.9696,13.7,,,
+8,"What is the next number in the sequence: 2, 6, 12, 20, 30, 42, ...?","The next number in the sequence is **56**.
+
+There are two common ways to determine this:
+
+**1. Looking at the differences:**
+*   6 - 2 = **4**
+*   12 - 6 = **6**
+*   20 - 12 = **8**
+*   30 - 20 = **10**
+*   42 - 30 = **12**
+
+The differences are increasing by 2 each time. Following this pattern, the next difference should be **14**.
+42 + 14 = **56**.
+
+**2. Using the formula $n^2 + n$:**
+*   $1^2 + 1 = 2$
+*   $2^2 + 2 = 6$
+*   $3^2 + 3 = 12$
+*   $4^2 + 4 = 20$
+*   $5^2 + 5 = 30$
+*   $6^2 + 6 = 42$
+*   $7^2 + 7 = 49 + 7 = \mathbf{56}$",34,257,291,3.2561,78.93,,,
+9,"A tank can be filled by Pipe A in 3 hours and drained by Pipe B in 4 hours. If both pipes are opened at the same time, how long will it take to fill an empty tank?","To find out how long it will take to fill the tank, we can calculate the rate of work for each pipe.
+
+**1. Determine the rates:**
+*   **Pipe A (filling):** It fills the tank in 3 hours, so its rate is **$1/3$** of the tank per hour.
+*   **Pipe B (draining):** It drains the tank in 4 hours, so its rate is **$-1/4$** of the tank per hour.
+
+**2. Determine the combined rate:**
+When both pipes are open, we add their rates together:
+$$\text{Combined Rate} = \frac{1}{3} - \frac{1}{4}$$
+
+To subtract these, find a common denominator (which is 12):
+$$\text{Combined Rate} = \frac{4}{12} - \frac{3}{12} = \frac{1}{12}$$
+
+This means that with both pipes open, $1/12$ of the tank is filled every hour.
+
+**3. Calculate the time:**
+If the rate is $1/12$ of the tank per hour, the time required to fill the whole tank is the reciprocal of the rate:
+$$\text{Time} = \frac{1}{1/12} = 12 \text{ hours}$$
+
+**Answer:**
+It will take **12 hours** to fill the tank.",44,307,351,1.486,206.59,,,
+10,Write a Python function named `is_palindrome` that checks if a given string is a palindrome. Return a boolean.,"To check if a string is a palindrome in Python, you can compare the string with its reverse using slicing (`[::-1]`).
+
+Here is the function:
+
+```python
+def is_palindrome(s):
+    # Optional: Normalize the string (remove spaces and convert to lowercase)
+    # s = s.replace("" "", """").lower()
+    
+    return s == s[::-1]
+
+# Examples:
+print(is_palindrome(""radar""))  # True
+print(is_palindrome(""hello""))  # False
+```
+
+### Explanation:
+*   **`s[::-1]`**: This is Python's ""slicing"" syntax. It creates a copy of the string starting from the end and moving backwards to the front, effectively reversing it.
+*   **`s == s[::-1]`**: This compares the original string to the reversed version. If they are identical, the function returns `True`; otherwise, it returns `False`.
+
+**Note:** If you want the function to be case-insensitive or ignore spaces (e.g., treating ""Racecar"" as a palindrome), you can modify the function like this:
+
+```python
+def is_palindrome(s):
+    # Remove spaces and make lowercase for a robust check
+    clean_s = s.replace("" "", """").lower()
+    return clean_s == clean_s[::-1]
+```",25,292,317,1.9287,151.39,,,
+11,"Identify the syntax or runtime error in this JavaScript code snippet and explain how to fix it:
+const user = { name: 'Alice' };
+user = { name: 'Bob' };","### The Error
+The error in this code is a **`TypeError: Assignment to constant variable`**.
+
+### Explanation
+In JavaScript, the `const` keyword creates a **read-only reference** to a value. 
+
+*   When you declare `const user = { name: 'Alice' };`, you are telling JavaScript that the variable `user` will always point to that specific object in memory.
+*   In the second line, `user = { name: 'Bob' };`, you are attempting to **reassign** the variable `user` to a brand-new object. Because `user` was declared with `const`, JavaScript prevents this reassignment.
+
+**Note:** It is a common misconception that `const` makes objects ""immutable."" It does not. You can still change the *properties* of the object, just not the variable reference itself.
+
+---
+
+### How to Fix It
+
+Depending on what you are trying to achieve, there are two ways to fix this:
+
+#### Option 1: Use `let` (If you need to reassign the variable)
+If you intend to completely replace the object, use `let` instead of `const`. This allows the variable to be reassigned.
+
+```javascript
+let user = { name: 'Alice' };
+user = { name: 'Bob' }; // This works perfectly
+```
+
+#### Option 2: Mutate the existing object (If you want to keep the same reference)
+If you want to update the data without changing the object reference, you can modify the property directly. This is often preferred in many JavaScript frameworks to maintain object identity.
+
+```javascript
+const user = { name: 'Alice' };
+user.name = 'Bob'; // This works because you are modifying the object, not reassigning the variable
+```",40,379,419,2.6192,144.7,,,
+12,What is the time complexity of looking up a key in a well-distributed Hash Map (or Python dictionary) in the average case versus the worst case?,"In a well-distributed Hash Map (such as a Python dictionary), the time complexity for a key lookup is as follows:
+
+### 1. Average Case: **$O(1)$**
+In the average case, a hash map provides **constant time** complexity. 
+*   **Why:** The hash function maps the key to a specific index in the underlying array (bucket). If the hash function is efficient and the distribution is uniform, the algorithm can jump directly to the memory location of the value without needing to search through other elements.
+
+### 2. Worst Case: **$O(n)$**
+In the worst case, the time complexity degrades to **linear time**, where $n$ is the number of elements in the hash map.
+*   **Why:** This occurs when many keys ""collide""—meaning the hash function maps multiple keys to the same bucket (or index). 
+*   **The Mechanism:** If all keys are hashed to the same bucket, the hash map effectively becomes a linked list (or another structure) that must be traversed linearly to find the correct key.
+*   **Note on Python:** While the theoretical worst case is $O(n)$, modern hash map implementations (including Python's) use techniques like **dynamic resizing** and **load factor management** to keep the probability of this happening extremely low. Furthermore, Python 3.4+ includes randomized hashing (hash randomization) to prevent attackers from intentionally triggering worst-case collisions (a ""Denial of Service"" attack).
+
+---
+
+### Summary Table
+
+| Case | Complexity | Explanation |
+| :--- | :--- | :--- |
+| **Average** | **$O(1)$** | Direct access via hash index. |
+| **Worst** | **$O(n)$** | All keys collide in the same bucket, requiring a linear scan. |
+
+**Key Takeaway:** While the worst case is technically $O(n)$, hash maps are designed so that collisions are rare, making $O(1)$ the practical performance expectation for almost all real-world applications.",32,433,465,2.4481,176.87,,,
+13,"Write a SQL query to find the second highest salary from an `employees` table containing columns `id` and `salary`. If there is no second highest salary, return NULL.","To find the second highest salary, you can use the `OFFSET` clause or a subquery. Using `OFFSET` is generally the most readable approach.
+
+### Option 1: Using `OFFSET` (Recommended)
+This approach sorts the salaries in descending order, skips the first one, and takes the next one. Using `DISTINCT` ensures that if multiple people have the same top salary, we are still looking for the second *unique* value.
+
+```sql
+SELECT DISTINCT salary 
+FROM employees 
+ORDER BY salary DESC 
+LIMIT 1 OFFSET 1;
+```
+
+### Option 2: Using a Subquery (Standard SQL)
+If your database does not support `OFFSET` (or if you want to be strictly standard-compliant), you can find the maximum salary that is strictly less than the overall maximum salary.
+
+```sql
+SELECT MAX(salary) 
+FROM employees 
+WHERE salary < (SELECT MAX(salary) FROM employees);
+```
+
+### Why these work:
+1.  **`DISTINCT`**: This is crucial. If the top two salaries are both $100,000, a simple `ORDER BY` would return $100,000 as the second highest. `DISTINCT` ensures you are looking for the second *unique* salary value.
+2.  **Handling NULL**: Both queries above will naturally return `NULL` if there is no second highest salary (e.g., if the table is empty or if all employees have the same salary). 
+
+**Note:** If you are using **SQL Server**, you would use `OFFSET 1 ROWS FETCH NEXT 1 ROWS ONLY` instead of `LIMIT`. If you are using **Oracle**, you would use `OFFSET 1 ROWS FETCH NEXT 1 ROWS ONLY` (in versions 12c and later).",37,384,421,4.4036,87.2,,,
+14,"In Python, what is the difference between `__init__` and `__new__` tools?","In Python, the difference between `__new__` and `__init__` comes down to the **creation** versus the **initialization** of an object.
+
+To understand the difference, you must understand the lifecycle of an object:
+1. **`__new__`** is the **constructor** (it creates the object).
+2. **`__init__`** is the **initializer** (it sets up the object).
+
+---
+
+### 1. `__new__(cls, ...)`
+*   **Purpose:** It is a static method responsible for creating and returning a new instance of the class.
+*   **When it runs:** It is the very first step in the object lifecycle. It is called before `__init__`.
+*   **Return value:** It **must** return an instance of the class (usually by calling `super().__new__(cls)`). If it doesn't return an instance, `__init__` will not be called.
+*   **Use case:** You rarely need to override this. It is primarily used when you need to control the creation of an object, such as:
+    *   Implementing the **Singleton pattern**.
+    *   Subclassing immutable types (like `int`, `str`, or `tuple`).
+    *   Customizing object creation in metaclasses.
+
+### 2. `__init__(self, ...)`
+*   **Purpose:** It is an instance method responsible for initializing the object's attributes after it has been created.
+*   **When it runs:** It is called automatically after `__new__` has returned an instance.
+*   **Return value:** It must return `None`. If you try to return anything else, Python will raise a `TypeError`.
+*   **Use case:** This is where you perform standard setup, like assigning values to `self.variable`.
+
+---
+
+### Comparison Table
+
+| Feature | `__new__` | `__init__` |
+| :--- | :--- | :--- |
+| **Role** | Creates the instance | Initializes the instance |
+| **Type** | Static method | Instance method |
+| **First Argument** | `cls` (the class itself) | `self` (the created instance) |
+| **Return Value** | Returns the instance | Returns `None` |
+| **Frequency** | Rarely overridden | Commonly overridden |
+
+---
+
+### Code Example
+
+```python
+class MyClass:
+    def __new__(cls, *args, **kwargs):
+        print(""1. __new__ called: Creating the object."")
+        instance = super().__new__(cls)
+        return instance
+
+    def __init__(self, value):
+        print(""2. __init__ called: Initializing the object."")
+        self.value = value
+
+# Execution
+obj = MyClass(10)
+```
+
+**Output:**
+```text
+1. __new__ called: Creating the object.
+2. __init__ called: Initializing the object.
+```
+
+### Summary: Which one should I use?
+*   **99% of the time, you only need `__init__`.** Use it to set initial values for your object's attributes.
+*   **Use `__new__` only** if you are doing advanced meta-programming, such as controlling how an object is instantiated or working with immutable objects that cannot be modified after creation.",22,728,750,9.549,76.24,,,
+15,What does the HTTP 403 status code represent?,"The HTTP **403 Forbidden** status code indicates that the server understands the request you have made, but it **refuses to authorize it.**
+
+Unlike a 401 (Unauthorized) error, which means the server doesn't know who you are (you aren't logged in), a 403 error means the server knows exactly who you are, but you do not have the necessary permissions to access the requested resource.
+
+Here is a breakdown of why this happens and what it means:
+
+### 1. The Core Difference: 401 vs. 403
+*   **401 Unauthorized:** ""I don't know who you are. Please log in.""
+*   **403 Forbidden:** ""I know who you are, but you aren't allowed to see this.""
+
+### 2. Common Causes
+*   **Insufficient Permissions:** You are logged in as a standard user, but you are trying to access an ""Admin only"" page or file.
+*   **Directory Listing Denied:** You are trying to view the contents of a folder on a website (e.g., `example.com/images/`), but the server has been configured to block directory browsing for security reasons.
+*   **IP Blocking:** The server has blacklisted your IP address or is configured to only accept requests from specific regions or networks.
+*   **File Permissions:** On the server side, the file or folder you are trying to access has incorrect permission settings (e.g., the web server process doesn't have ""read"" access to the file).
+*   **Missing Index File:** You are trying to access a directory that does not have an index file (like `index.html` or `index.php`), and the server is set to forbid listing the files within that directory.
+
+### 3. Can you fix it?
+If you are a **user** encountering this error:
+*   **Check your URL:** Ensure you aren't trying to access a private directory or an admin panel you shouldn't be in.
+*   **Log in:** If you aren't logged in, try logging in (though this usually triggers a 401, some sites use 403 as a catch-all).
+*   **Clear Cache/Cookies:** Sometimes old session data can cause permission conflicts.
+*   **Contact Support:** If you believe you should have access, contact the website administrator.
+
+If you are a **website administrator/developer**:
+*   **Check File Permissions:** Ensure your web server (e.g., Apache or Nginx) has the correct read/write permissions for the files.
+*   **Check `.htaccess` or Config files:** Look for rules that might be explicitly denying access to specific IPs, user agents, or directories.
+*   **Check Index files:** Ensure there is a default file (like `index.html`) in the directory you are trying to access.",13,619,632,3.8695,159.97,,,
+16,Explain the concept of 'closures' in JavaScript with a brief architectural description.,"In JavaScript, a **closure** is a feature where an inner function has access to the outer (enclosing) function's variables, even after the outer function has finished executing.
+
+To understand closures, you must first understand two concepts: **Lexical Scoping** and the **Execution Stack**.
+
+---
+
+### 1. The Architectural Description
+
+To visualize a closure, imagine the JavaScript engine’s memory management:
+
+*   **The Execution Context:** When a function is called, JavaScript creates an ""Execution Context."" This context contains a **Variable Environment** (where local variables live) and a reference to the **Outer Environment** (the scope chain).
+*   **The Stack vs. The Heap:** Normally, when a function finishes, its local variables are removed from the call stack to free up memory. However, if an inner function is returned or passed elsewhere, JavaScript keeps the outer function's variable environment alive in the **Heap** (memory).
+*   **The ""Backpack"":** You can think of a closure as a ""backpack"" that the inner function carries. Even when the outer function is ""popped"" off the stack, the inner function retains a persistent reference to the outer function’s variables inside that backpack.
+
+---
+
+### 2. A Practical Example
+
+```javascript
+function createCounter() {
+    let count = 0; // This variable is ""closed over""
+
+    return function() {
+        count++; // The inner function remembers 'count'
+        return count;
+    };
+}
+
+const counter = createCounter(); 
+console.log(counter()); // 1
+console.log(counter()); // 2
+```
+
+**What is happening architecturally?**
+1.  `createCounter` is invoked. A scope is created with `count = 0`.
+2.  `createCounter` returns the inner function definition.
+3.  Normally, `createCounter`'s scope would be garbage collected. But because the returned function maintains a **reference** to the `count` variable, the JavaScript engine preserves that scope in memory.
+4.  Every time you call `counter()`, it is accessing that same persistent `count` variable.
+
+---
+
+### 3. Why are closures useful?
+
+1.  **Data Privacy (Encapsulation):** Closures allow you to emulate ""private"" variables. In the example above, there is no way to modify `count` from the outside; you can only interact with it via the returned function.
+2.  **Function Factories:** You can create functions that are pre-configured with specific data (e.g., a function that adds a specific number to any input).
+3.  **Asynchronous Programming:** Closures are essential for callbacks and promises. When an asynchronous task (like a timer or API call) finishes, it needs to remember the state of the variables that existed when it was first defined.
+
+### Summary
+A closure is the combination of a function bundled together with references to its surrounding state (**lexical environment**). It allows a function to ""remember"" the environment in which it was created, effectively extending the lifespan of variables beyond the execution of the parent function.",16,667,683,5.3486,124.71,,,
+17,"In Git, what is the functional difference between `git fetch` and `git pull`?","To understand the difference, it helps to think of your Git workflow as having three distinct areas: your **Remote Repository** (e.g., GitHub), your **Local Tracking Branches** (a hidden cache of the remote), and your **Working Directory** (where you edit files).
+
+Here is the functional breakdown:
+
+---
+
+### 1. `git fetch` (The ""Safe"" Update)
+`git fetch` communicates with the remote repository and downloads all the new data (commits, files, refs) that you don't have yet. 
+
+*   **What it does:** It updates your **remote-tracking branches** (e.g., `origin/main`).
+*   **Impact on your work:** **None.** It does not touch your actual working files or your current branch.
+*   **Why use it:** It allows you to see what others have been working on without merging their changes into your code. You can inspect the changes (using `git log` or `git diff`) before deciding to integrate them.
+
+---
+
+### 2. `git pull` (The ""Automated"" Update)
+`git pull` is a convenience command that performs two actions in one step.
+
+*   **What it does:**
+    1.  It runs `git fetch` to download the latest data.
+    2.  It immediately runs `git merge` (or `git rebase`, depending on your settings) to integrate those changes into your **current working branch**.
+*   **Impact on your work:** **High.** It modifies your local files. If you have uncommitted changes or if the remote code conflicts with your local code, `git pull` can trigger merge conflicts that you must resolve immediately.
+*   **Why use it:** Use it when you are ready to update your local branch to match the remote branch and you are confident that the merge will be clean.
+
+---
+
+### Summary Table
+
+| Feature | `git fetch` | `git pull` |
+| :--- | :--- | :--- |
+| **Action** | Downloads data only. | Downloads data AND merges it. |
+| **Safety** | Very safe; does not change your code. | Potentially disruptive; may cause conflicts. |
+| **Workflow** | Used to review changes before merging. | Used to quickly sync your branch. |
+| **Formula** | N/A | `git fetch` + `git merge` |
+
+---
+
+### The ""Best Practice"" Recommendation
+Many professional developers prefer using **`git fetch`** followed by **`git merge`** (or `git rebase`). 
+
+By fetching first, you can run `git log origin/main` to see exactly what is being brought into your project. If you see something you aren't ready for, you can pause, finish your current task, and merge later. `git pull` is faster, but it is ""blind""—it merges whatever is on the remote into your work whether you are ready for it or not.",20,631,651,3.1569,199.88,,,
+18,What HTML tags are used to create a numbered itemized list?,"To create a numbered (ordered) list in HTML, you use the following two tags:
+
+1.  **`<ol>`**: This stands for **Ordered List**. It acts as the container for the entire list.
+2.  **`<li>`**: This stands for **List Item**. You wrap each individual item in this tag.
+
+### Example:
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+
+### How it renders in a browser:
+1. First item
+2. Second item
+3. Third item
+
+***
+
+### Useful Attributes
+*   **`type`**: You can change the numbering style by adding this attribute to the `<ol>` tag.
+    *   `<ol type=""A"">` (A, B, C...)
+    *   `<ol type=""a"">` (a, b, c...)
+    *   `<ol type=""I"">` (I, II, III...)
+    *   `<ol type=""i"">` (i, ii, iii...)
+*   **`start`**: You can specify the number to start counting from (e.g., `<ol start=""5"">` will start the list at 5).
+*   **`reversed`**: You can add this attribute to make the list count backwards (e.g., `<ol reversed>`).",14,297,311,1.9306,153.84,,,
+19,Write a regular expression (Regex) that validates a standard IPv4 address configuration format.,"To validate a standard IPv4 address (four groups of numbers from 0 to 255, separated by dots), you need to ensure that each octet does not exceed 255.
+
+### The Regex
+```regex
+^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+```
+
+---
+
+### Explanation
+The regex is broken down into two parts: the first three octets (which must end in a dot) and the final octet.
+
+1.  **`^`**: Start of the string.
+2.  **`(?: ... \.){3}`**: A non-capturing group that matches an octet followed by a literal dot, repeated exactly 3 times.
+3.  **The Octet Logic `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)`**:
+    *   **`25[0-5]`**: Matches numbers 250–255.
+    *   **`2[0-4][0-9]`**: Matches numbers 200–249.
+    *   **`[01]?[0-9][0-9]?`**: Matches numbers 0–199 (handles single digits, double digits, and leading zeros if allowed).
+4.  **`$`**: End of the string.
+
+---
+
+### Usage Examples
+
+#### Python
+```python
+import re
+
+ipv4_pattern = r""^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$""
+
+ip = ""192.168.1.1""
+if re.match(ipv4_pattern, ip):
+    print(""Valid IPv4"")
+else:
+    print(""Invalid IPv4"")
+```
+
+#### JavaScript
+```javascript
+const ipv4Pattern = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+
+console.log(ipv4Pattern.test(""192.168.1.1"")); // true
+console.log(ipv4Pattern.test(""256.0.0.1""));   // false
+```
+
+### Important Note
+While this regex is excellent for pattern matching, if you are building a production application, it is often safer to use your programming language's **built-in networking libraries** (e.g., `ipaddress` in Python or `net.IP` in Go). These libraries handle edge cases and provide additional validation (like checking for reserved ranges) that regex cannot perform.",18,712,730,3.6843,193.25,,,
+20,Write a short paragraph about traveling to Mars. Constraint: Do not use the letter 'e' anywhere in your response.,"Mars calls us. Humans long to visit that crimson orb. A cold, dusty world awaits our arrival. Bold ships launch into a vast, dark void. Soon, folks will walk upon that distant ground. It is a grand goal for all mankind.",25,50,75,1.2318,40.59,,,
+21,Give me a list of three popular fruit varieties. Format your entire response strictly as a valid CSV string with headers 'Fruit' and 'Color'. Do not add conversational filler.,"Fruit,Color
+Apple,Red
+Banana,Yellow
+Blueberry,Blue",36,16,52,0.9542,16.77,,,
+22,Draft a professional sign-off email for a project delivery. Your final output must contain exactly 45 words.,It has been a pleasure delivering this project to your team. I am confident that the final results will meet your expectations and drive success. Please let me know if you require any further assistance. Thank you for the opportunity to collaborate on this important initiative today. Goodbye.,24,53,77,0.8753,60.55,,,
+23,Answer the following question: 'Why is the sky blue?' Answer it in exactly three distinct sentences. The first sentence must end with a question mark. The second sentence must start with the word 'Because'. The third sentence must mention an optical phenomena.,"Have you ever wondered why the sky appears to be a vibrant shade of blue during the day? Because sunlight reaches Earth's atmosphere and is scattered in all directions by the gases and particles in the air. This process is known as Rayleigh scattering, which is a fascinating optical phenomena.",51,56,107,1.0555,53.06,,,
+24,"Provide a motivational quote, then translate it to French, and finally translate it to Spanish. Separate each section with a line of exactly 5 hyphens (-----).","""The only way to do great work is to love what you do."" — Steve Jobs
+
+-----
+
+""La seule façon de faire du bon travail est d'aimer ce que vous faites."" — Steve Jobs
+
+-----
+
+""La única forma de hacer un gran trabajo es amar lo que haces."" — Steve Jobs",34,64,98,18.6563,3.43,,,
+25,"Generate 3 random passwords. Each password must be exactly 8 characters long, contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special symbol. Format them as a numbered list.","Here are 3 random passwords that meet your requirements:
+
+1. K7#vP9xL
+2. b2@Nq5Wz
+3. 4mG!r8Yp",47,45,92,1.4042,32.05,,,
+26,"Explain global warming using an analogy of a greenhouse. Rule: Use uppercase letters for every single vowel (A, E, I, O, U) in your text.","ThE EArth Is lIkE A grEEnhOUsE. A grEEnhOUsE hAs glAss wAlls thAt lEt sUnlIght In bUt trAp thE hEAt InsIdE. OUr plAnEt hAs An AtmOsphErE thAt wOrks thE sAmE wAy. GAsEs lIkE cArbOn dIOxIdE Act lIkE thE glAss, hOldIng In thE wArmth frOm thE sUn. WhEn wE bUrn fOssIl fUEls, wE Add mOrE Of thEsE gAsEs tO thE AIr. ThIs Is lIkE thIckEnIng thE glAss wAlls Of thE grEEnhOUsE, whIch trAps tOO mUch hEAt And cAUsEs thE wOrld tO wArm Up.",35,210,245,2.2747,92.32,,,
+27,"Provide the capitals of Japan, France, and Canada. Your output should only contain the names of the cities separated by semicolons, with absolutely no punctuation or text at the end.",Tokyo;Paris;Ottawa,37,5,42,0.5343,9.36,,,
+28,Write a haiku about artificial intelligence. (A haiku must follow a 5-7-5 syllable structure).,"Silicon pulses,
+Thinking in a web of light,
+Mind born of the code.",25,18,43,0.9671,18.61,,,
+29,Summarize the importance of bees to the ecosystem. Your summary must be structured as a single JSON object containing two keys: 'ecological_impact' and 'agricultural_impact'.,"{
+  ""ecological_impact"": ""Bees are keystone species that facilitate the reproduction of a vast array of wild plants through pollination, which maintains genetic diversity, supports complex food webs, and provides essential habitats and food sources for countless other wildlife species."",
+  ""agricultural_impact"": ""Bees are vital for global food security, as they pollinate approximately one-third of the human food supply, significantly increasing crop yields and quality for fruits, vegetables, nuts, and oilseeds, thereby sustaining both local economies and international agricultural stability.""
+}",36,112,148,1.3113,85.41,,,

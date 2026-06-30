@@ -1,0 +1,1196 @@
+question_id,question,answer,prompt_tokens,output_tokens,total_tokens,latency_sec,tokens_per_sec,gpu_usage_pct,gpu_temp_c,gpu_mem_used_mb,model,answer_relevancy,faithfulness,question_type
+0,"A train leaves Station A traveling at 60 mph. Two hours later, a second train leaves Station A on the same track traveling at 90 mph. How many hours will it take the second train to catch up to the first train?","Alright, let's tackle this problem step by step. I'm going to think about it carefully to make sure I understand how the two trains are moving and when the second train catches up to the first one.
+
+### Understanding the Problem
+
+We have two trains starting from Station A:
+
+1. **First Train (Train X):**
+   - Leaves Station A at a certain time (let's call this time ""Time Zero"").
+   - Travels at a constant speed of 60 miles per hour (mph).
+
+2. **Second Train (Train Y):**
+   - Leaves Station A **two hours later** than Train X.
+   - Travels at a constant speed of 90 mph.
+
+We need to find out how many hours it will take for Train Y to catch up to Train X after Train Y has departed.
+
+### Visualizing the Situation
+
+Let's try to visualize the scenario:
+
+- At Time Zero (let's say 12:00 PM):
+  - Train X leaves Station A at 60 mph.
+
+- At 2:00 PM (two hours later):
+  - Train Y leaves Station A at 90 mph.
+
+Now, we need to see how the positions of both trains change over time after 2:00 PM.
+
+### Calculating the Head Start of Train X
+
+Before Train Y starts at 2:00 PM, Train X has been traveling for 2 hours at 60 mph.
+
+Distance = Speed × Time
+
+So, in 2 hours, Train X would have covered:
+Distance = 60 mph × 2 hours = 120 miles.
+
+This means at 2:00 PM:
+- Train X is 120 miles away from Station A.
+- Train Y is just starting from Station A (0 miles).
+
+### Relative Speed Concept
+
+Now, both trains are moving in the same direction. To find out how quickly Train Y is gaining on Train X, we can look at their relative speeds.
+
+- Speed of Train Y = 90 mph
+- Speed of Train X = 60 mph
+
+Relative speed (how much faster Train Y is compared to Train X) = Speed of Train Y - Speed of Train X = 90 mph - 60 mph = 30 mph.
+
+This means every hour after 2:00 PM, Train Y gets 30 miles closer to Train X.
+
+### Time to Catch Up
+
+At 2:00 PM:
+- Distance between them = 120 miles (Train X is ahead by 120 miles).
+- Train Y is closing this gap at 30 mph.
+
+Time to catch up = Distance / Relative Speed = 120 miles / 30 mph = 4 hours.
+
+So, it will take Train Y 4 hours after its departure (after 2:00 PM) to catch up to Train X.
+
+### Verifying the Answer
+
+Let's verify this to ensure it's correct.
+
+- Time when Train Y catches up: 4 hours after 2:00 PM is 6:00 PM.
+
+At 6:00 PM:
+- Distance covered by Train Y in 4 hours = 90 mph × 4 hours = 360 miles.
+- Distance covered by Train X:
+  - From 12:00 PM to 6:00 PM is 6 hours.
+  - Distance = 60 mph × 6 hours = 360 miles.
+
+Both trains are at 360 miles from Station A at 6:00 PM, so they meet at that time. This confirms our answer is correct.
+
+### Alternative Approach: Using Equations
+
+Another way to solve this is by setting up equations for the positions of both trains as functions of time.
+
+Let’s define:
+- Let t be the time in hours after 2:00 PM (when Train Y departs).
+
+At time t:
+- Distance covered by Train Y = 90 × t.
+- Distance covered by Train X:
+  - Before 2:00 PM: 60 × 2 = 120 miles.
+  - After 2:00 PM: 60 × t.
+  - Total distance = 120 + 60t.
+
+They meet when their distances are equal:
+90t = 120 + 60t.
+
+Subtract 60t from both sides:
+30t = 120.
+
+Divide both sides by 30:
+t = 4 hours.
+
+This matches our previous answer.
+
+### Common Pitfalls
+
+It's easy to make a mistake here by not accounting for the head start of the first train. One might mistakenly think:
+
+""If Train Y is going 90 mph and Train X is at 60 mph, the difference is 30 mph, so it should take 60/30 = 2 hours to catch",53,1024,1077,5.8553,174.89,,,,mistral-small-2506,0.9230769230769231,1.0,factual
+1,"If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?","Alright, let's tackle this clock-striking problem step by step. The question is:
+
+*If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?*
+
+At first glance, it might seem straightforward, but let's break it down to understand the underlying pattern.
+
+### Understanding the Problem
+
+When a clock strikes a certain number of times, the time intervals between the strikes are what we need to consider. For example, when a clock strikes 6 times, there are intervals between each strike.
+
+Here's how it works:
+- The first strike happens at time zero.
+- Then there's a pause (an interval) before the second strike.
+- This continues until the last strike.
+
+So, for 6 strikes, there are 5 intervals between them.
+
+Similarly, for 12 strikes, there would be 11 intervals.
+
+### Calculating the Time per Interval
+
+Given that 6 strikes take 5 seconds, and there are 5 intervals between these strikes, we can find the duration of each interval.
+
+Total time = Number of intervals × Time per interval
+5 seconds = 5 intervals × Time per interval
+
+So,
+Time per interval = 5 seconds / 5 intervals = 1 second per interval.
+
+This means each interval between strikes is 1 second long.
+
+### Applying to 12 Strikes
+
+Now, for 12 strikes:
+Number of intervals = 12 - 1 = 11 intervals.
+
+If each interval is 1 second, then:
+Total time = Number of intervals × Time per interval
+Total time = 11 intervals × 1 second/interval = 11 seconds.
+
+### Verifying the Answer
+
+Let's verify this with the initial information to ensure our logic holds.
+
+For 6 strikes:
+- Intervals: 5
+- Time per interval: 1 second
+- Total time: 5 × 1 = 5 seconds (matches the given information)
+
+For 12 strikes:
+- Intervals: 11
+- Time per interval: 1 second
+- Total time: 11 × 1 = 11 seconds
+
+This seems consistent.
+
+### Potential Missteps
+
+Initially, one might think to set up a simple proportion like:
+
+6 strikes / 5 seconds = 12 strikes / x seconds
+Then, x = (12 × 5) / 6 = 10 seconds.
+
+But this would be incorrect because it doesn't account for the intervals between strikes. The number of intervals increases with the number of strikes, not in direct proportion to the number of strikes themselves.
+
+For example:
+- 1 strike: 0 intervals (strikes immediately, time is 0)
+- 2 strikes: 1 interval
+- 3 strikes: 2 intervals
+- ...
+- n strikes: (n - 1) intervals
+
+So, the correct approach is to consider the intervals, not just the number of strikes.
+
+### Alternative Approach: Counting Strikes and Intervals
+
+Another way to think about it is to consider that the time is determined by the intervals between strikes, not the strikes themselves.
+
+Given:
+- 6 strikes in 5 seconds implies 5 intervals of equal length.
+- So, each interval is 1 second.
+
+For 12 strikes:
+- There are 11 intervals.
+- Each interval is 1 second.
+- Total time = 11 × 1 = 11 seconds.
+
+This confirms our previous answer.
+
+### Generalizing the Solution
+
+To generalize, if a clock strikes 'n' times in 't' seconds, then:
+
+Number of intervals = n - 1
+Time per interval = t / (n - 1)
+
+For 'm' strikes:
+Number of intervals = m - 1
+Total time = (m - 1) × (t / (n - 1))
+
+Applying to our problem:
+n = 6, t = 5, m = 12
+Total time = (12 - 1) × (5 / (6 - 1)) = 11 × (5 / 5) = 11 × 1 = 11 seconds.
+
+### Conclusion
+
+After carefully analyzing the problem and considering the intervals between strikes, the correct answer is:
+
+**It will take 11 seconds for the clock to strike 12 times.**",28,906,934,5.3657,168.85,,,,mistral-small-2506,1.0,1.0,factual
+2,"All prompt engineers are tech enthusiasts. Some tech enthusiasts are gamers. No gamers are professional writers. Based on these rules, is it definitely true that some prompt engineers are not professional writers?","Alright, let's tackle this problem step by step. I'm going to break down each statement and see how they relate to each other to determine whether the conclusion ""some prompt engineers are not professional writers"" is definitely true based on the given rules.
+
+### Understanding the Statements
+
+We have three statements:
+
+1. **All prompt engineers are tech enthusiasts.**
+   - This means that if someone is a prompt engineer, they must be a tech enthusiast.
+   - In logical terms: If P (Prompt Engineer), then T (Tech Enthusiast). Symbolically: P → T.
+
+2. **Some tech enthusiasts are gamers.**
+   - This means that there is at least one tech enthusiast who is also a gamer.
+   - Symbolically: ∃x (T(x) ∧ G(x)), where G stands for Gamer.
+
+3. **No gamers are professional writers.**
+   - This means that if someone is a gamer, they are not a professional writer.
+   - Symbolically: G → ¬W, where W stands for Professional Writer.
+
+### The Question
+
+We need to determine if it's definitely true that ""some prompt engineers are not professional writers.""
+
+Symbolically, we're asking if: ∃x (P(x) ∧ ¬W(x)) is necessarily true given the above statements.
+
+### Breaking It Down
+
+Let's see how these statements connect to reach the conclusion.
+
+1. From the first statement, all prompt engineers are tech enthusiasts. So, any prompt engineer is also a tech enthusiast.
+
+2. From the second statement, some tech enthusiasts are gamers. This means that within the set of tech enthusiasts, there's at least one who is a gamer.
+
+   - Since all prompt engineers are tech enthusiasts, and some tech enthusiasts are gamers, it's possible that some prompt engineers are gamers. But is this necessarily the case? Not necessarily. The ""some"" in ""some tech enthusiasts are gamers"" could refer to tech enthusiasts who are not prompt engineers. However, it's also possible that the overlap includes prompt engineers who are gamers.
+
+3. From the third statement, no gamers are professional writers. So, if someone is a gamer, they are not a professional writer.
+
+Now, let's consider two scenarios based on the second statement:
+
+**Scenario 1:** The ""some tech enthusiasts who are gamers"" include at least one prompt engineer.
+
+   - Then, that prompt engineer is a gamer (from the overlap).
+   - From the third statement, since they're a gamer, they're not a professional writer.
+   - Therefore, there exists at least one prompt engineer who is not a professional writer.
+
+**Scenario 2:** The ""some tech enthusiasts who are gamers"" do not include any prompt engineers.
+
+   - In this case, all prompt engineers are tech enthusiasts who are not gamers.
+   - From the third statement, since they're not gamers, the statement doesn't directly say anything about their professional writing status.
+   - They could be professional writers or not; the given statements don't provide information to conclude either way.
+
+### Analyzing the Conclusion
+
+The conclusion is that ""some prompt engineers are not professional writers.""
+
+- In **Scenario 1**, this is definitely true because we have at least one prompt engineer who is a gamer and hence not a professional writer.
+- In **Scenario 2**, the given statements don't provide enough information to conclude that any prompt engineer is not a professional writer. They could all be professional writers, or some could not be; we don't know.
+
+Since the second scenario is possible based on the given statements, the conclusion is not necessarily always true. It's only definitely true if the ""some tech enthusiasts who are gamers"" include at least one prompt engineer, which isn't guaranteed by the given information.
+
+### Verifying with Venn Diagrams
+
+Sometimes, drawing Venn diagrams can help visualize the relationships.
+
+1. Draw a circle for Prompt Engineers (P), entirely within Tech Enthusiasts (T) because all prompt engineers are tech enthusiasts.
+2. Some part of T overlaps with Gamers (G), meaning some tech enthusiasts are gamers. This overlap could be entirely outside P or could include part of P.
+   - If the overlap includes part of P, then some prompt engineers are gamers, and hence not professional writers.
+   - If the overlap is entirely outside P, then no prompt engineers are gamers, and we don't know about their professional writing status.
+3. Since the overlap could be either way, the conclusion isn't necessarily always true.
+
+### Counterexample
+
+To show that the conclusion isn't necessarily true, let's construct a counterexample where the conclusion doesn't hold.
+
+- Let’s say there are 100 tech enthusiasts.
+  - 10 of them are prompt engineers (all within tech enthusiasts).
+  - 2",44,1024,1068,6.1612,166.2,,,,mistral-small-2506,1.0,1.0,factual
+3,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?,"Alright, let's tackle this problem step by step. The problem states:
+
+*A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?*
+
+At first glance, this seems straightforward, but let's break it down to ensure we understand it correctly.
+
+### Understanding the Problem
+
+We have two items:
+1. A bat
+2. A ball
+
+The total cost of both items together is $1.10.
+
+Additionally, we're told that the bat costs $1.00 more than the ball.
+
+Our goal is to find out how much the ball costs.
+
+### Defining Variables
+
+To solve this, it's helpful to assign variables to the unknowns.
+
+Let's let:
+- The cost of the ball = **x** dollars
+- The cost of the bat = **x + $1.00** (since the bat costs $1.00 more than the ball)
+
+### Setting Up the Equation
+
+Now, we know that the sum of the bat and the ball is $1.10. So, we can write the equation as:
+
+Cost of bat + Cost of ball = Total cost
+(x + $1.00) + x = $1.10
+
+### Solving the Equation
+
+Now, let's solve for x.
+
+Combine like terms:
+x + $1.00 + x = $1.10
+2x + $1.00 = $1.10
+
+Now, subtract $1.00 from both sides to isolate the terms with x:
+2x = $1.10 - $1.00
+2x = $0.10
+
+Now, divide both sides by 2 to solve for x:
+x = $0.10 / 2
+x = $0.05
+
+### Verifying the Solution
+
+Let's check if this makes sense.
+
+If the ball costs $0.05, then the bat costs $1.00 more, so:
+Bat = $0.05 + $1.00 = $1.05
+
+Now, let's add them together:
+Bat + Ball = $1.05 + $0.05 = $1.10
+
+This matches the total cost given in the problem, so our solution checks out.
+
+### Common Pitfall
+
+It's easy to jump to a quick answer without setting up the equation properly. A common initial guess might be that the ball costs $0.10 because $1.00 is $1.00 more than $0.10, making the total $1.10. However, let's see what happens if the ball is $0.10:
+
+Bat = $0.10 + $1.00 = $1.10
+Total = $1.10 (bat) + $0.10 (ball) = $1.20
+
+This doesn't match the given total of $1.10, so $0.10 is incorrect for the ball's cost.
+
+This shows why setting up the equation properly is crucial to avoid such mistakes.
+
+### Conclusion
+
+After carefully setting up the equation and solving it step by step, we find that:
+
+**The ball costs $0.05 (5 cents).**",37,700,737,4.8246,145.09,,,,mistral-small-2506,1.0,1.0,factual
+4,"If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","Alright, let's tackle this problem step by step. The question is:
+
+**""If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?""**
+
+At first glance, this seems straightforward, but let's break it down to ensure we understand the relationships between the number of machines, the time taken, and the number of widgets produced.
+
+### Understanding the Given Information
+
+We have the following information:
+- **Number of machines (M₁):** 5
+- **Time taken (T₁):** 5 minutes
+- **Number of widgets produced (W₁):** 5
+
+We need to find out:
+- **Time taken (T₂):** ? minutes
+- **Number of machines (M₂):** 100
+- **Number of widgets (W₂):** 100
+
+### Identifying the Relationships
+
+First, let's think about how the number of machines affects the production rate and the time taken to produce a certain number of widgets.
+
+1. **Production Rate per Machine:**
+   - If 5 machines make 5 widgets in 5 minutes, how many widgets does one machine make in that time?
+   - Since 5 machines make 5 widgets, each machine makes 1 widget in 5 minutes.
+     - Because 5 machines * (1 widget / machine) = 5 widgets.
+
+2. **Time per Widget per Machine:**
+   - From the above, one machine takes 5 minutes to make 1 widget.
+   - So, the rate is 1 widget per 5 minutes per machine.
+
+### Scaling Up the Number of Machines
+
+Now, we have 100 machines. How does this affect the production?
+
+1. **Total Production Rate with 100 Machines:**
+   - If one machine makes 1 widget in 5 minutes, then 100 machines can make 100 widgets in the same 5 minutes.
+     - Because each of the 100 machines is working independently, each producing 1 widget in 5 minutes.
+     - So, 100 machines * (1 widget / machine) = 100 widgets in 5 minutes.
+
+2. **Verification:**
+   - Let's verify this with smaller numbers to ensure our logic holds.
+   - Original scenario: 5 machines, 5 minutes, 5 widgets.
+     - As we saw, each machine makes 1 widget in 5 minutes.
+   - Now, if we have 10 machines:
+     - Each makes 1 widget in 5 minutes, so 10 machines make 10 widgets in 5 minutes.
+   - Similarly, 100 machines would make 100 widgets in 5 minutes.
+
+### Potential Misconceptions
+
+It's easy to think that increasing the number of machines would proportionally decrease the time taken, but that's not the case here because the number of widgets is also increasing proportionally.
+
+For example, if we mistakenly thought that more machines mean less time:
+- Original: 5 machines, 5 minutes, 5 widgets.
+- Then, 100 machines might seem like it should take less time, but since we're also increasing the number of widgets to 100, the time remains the same because each machine is still producing at the same rate.
+
+### Mathematical Approach
+
+Let's approach this mathematically to confirm.
+
+1. **Find the rate of production per machine:**
+   - Total widgets produced = 5
+   - Number of machines = 5
+   - Time = 5 minutes
+   - Rate per machine = (Total widgets) / (Number of machines * Time) = 5 / (5 * 5) = 5 / 25 = 1/5 widgets per minute per machine.
+
+   Wait a minute, this seems a bit off because earlier we thought one machine makes 1 widget in 5 minutes, which is 1/5 widgets per minute, which matches this calculation.
+
+2. **Calculate time for 100 machines to make 100 widgets:**
+   - Total production needed = 100 widgets
+   - Number of machines = 100
+   - Rate per machine = 1/5 widgets per minute
+   - Total production rate = Number of machines * Rate per machine = 100 * (1/5) = 20 widgets per minute.
+   - Time required = Total widgets / Total production rate = 100 / 20 = 5 minutes.
+
+This confirms our earlier reasoning.
+
+### Alternative Perspective: Constant Time
+
+Another way to look at it is to realize that the time taken is independent of the number of machines and widgets as long as the ratio of machines to widgets remains the same.
+
+- Original: 5 machines / 5 widgets = 1 machine per widget, taking 5 minutes.
+- New: 100 machines /",35,1024,1059,5.9474,172.18,,,,mistral-small-2506,1.0,0.875,factual
+5,"You are facing two doors. One leads to freedom, the other to certain doom. One guard stands at each door; one always lies, and the other always tells the truth. You do not know which is which. You can ask exactly one guard one question. What do you ask to find the door to freedom?","Alright, let's tackle this classic logic puzzle step by step. I'm going to think aloud as I work through the problem to understand how to determine which door leads to freedom with just one question to one guard.
+
+### Understanding the Problem
+
+We have two doors:
+- **Door A**: Leads to freedom.
+- **Door B**: Leads to certain doom.
+
+There are two guards:
+- **Guard 1**: Always tells the truth.
+- **Guard 2**: Always lies.
+
+We don't know which guard is which, and we can ask only one guard one question to find out which door leads to freedom.
+
+### Initial Thoughts
+
+The challenge is that we don't know which guard is the truth-teller and which is the liar. If we ask the wrong guard a direct question like ""Does this door lead to freedom?"", we might get a misleading answer.
+
+For example:
+- If we ask the truthful guard in front of the freedom door, they'll say ""Yes.""
+- If we ask the lying guard in front of the doom door, they'll also say ""Yes"" (because the truth is ""No,"" but they lie).
+
+This doesn't help us distinguish between the doors.
+
+### Crafting the Right Question
+
+We need a question that gives us the correct answer regardless of whether we're talking to the truthful guard or the lying guard. A common strategy in such puzzles is to ask a question that forces both guards to point to the same door, but that door would be the opposite of what we want.
+
+Here's how it can work:
+
+**Ask either guard: ""If I were to ask the other guard which door leads to freedom, what would they say?""**
+
+Let's break down the possible scenarios:
+
+1. **Guard 1 is the truth-teller, Guard 2 is the liar:**
+   - If you ask Guard 1 (truth-teller) about what Guard 2 would say:
+     - Guard 2 would lie. Since Guard 2 is in front of the doom door, the truth is ""No,"" but they lie and say ""Yes.""
+     - So, Guard 1 truthfully reports that Guard 2 would say ""Yes.""
+
+2. **Guard 1 is the liar, Guard 2 is the truth-teller:**
+   - If you ask Guard 1 (liar) about what Guard 2 would say:
+     - Guard 2 would truthfully say ""Yes"" if they're in front of the freedom door.
+     - But since Guard 1 lies, they would say the opposite of what Guard 2 would say, which is ""No.""
+
+In both scenarios, the answer ""Yes"" corresponds to the doom door, and ""No"" corresponds to the freedom door.
+
+Therefore, if the guard answers ""Yes,"" choose the other door. If they answer ""No,"" choose the door they're pointing to.
+
+### Simplifying the Question
+
+A more straightforward version of this question is:
+
+**""Which door would the other guard say leads to freedom?""**
+
+Then, choose the opposite door of their answer.
+
+Let's verify:
+
+1. **Truth-teller in front of freedom door:**
+   - Other guard (liar) would lie and point to doom door.
+   - Truth-teller truthfully reports that the liar would point to doom door.
+   - So, they say ""Doom door.""
+   - You choose the opposite: freedom door.
+
+2. **Truth-teller in front of doom door:**
+   - Other guard (liar) would lie and point to freedom door.
+   - Truth-teller truthfully reports that the liar would point to freedom door.
+   - So, they say ""Freedom door.""
+   - You choose the opposite: doom door.
+
+3. **Liar in front of freedom door:**
+   - Other guard (truth-teller) would truthfully point to freedom door.
+   - But the liar lies and says the opposite: ""Doom door.""
+   - You choose the opposite: freedom door.
+
+4. **Liar in front of doom door:**
+   - Other guard (truth-teller) would truthfully point to freedom door.
+   - But the liar lies and says the opposite: ""Freedom door.""
+   - You choose the opposite: doom door.
+
+In all cases, choosing the opposite door of their answer leads you to freedom.
+
+### Final Answer
+
+**Ask either guard: ""If I asked the other guard which door leads to freedom, what would they say?"" Then choose the opposite door of their answer.**
+
+Or more succinctly:
+
+**""Which door would the other guard say leads to freedom?"" Then choose the opposite door.**
+
+This way, regardless of whether you're talking to the truthful guard or the lying guard, you'll be able to determine the correct door to freedom.",68,997,1065,5.7122,174.54,,,,mistral-small-2506,0.6666666666666666,1.0,factual
+6,"A box contains 3 red apples and 7 green apples. If you select two apples at random without replacement, what is the probability that both are red?","To determine the probability of selecting two red apples from the box without replacement, follow these steps:
+
+1. **Total Number of Apples:**
+   - **Red apples:** 3
+   - **Green apples:** 7
+   - **Total apples:** \( 3 + 7 = 10 \)
+
+2. **First Selection:**
+   - **Probability of selecting a red apple first:**
+   \[
+   P(\text{First red}) = \frac{\text{Number of red apples}}{\text{Total apples}} = \frac{3}{10}
+   \]
+
+3. **Second Selection (without replacement):**
+   - **Remaining red apples:** \( 3 - 1 = 2 \)
+   - **Remaining total apples:** \( 10 - 1 = 9 \)
+   - **Probability of selecting a red apple second:**
+   \[
+   P(\text{Second red} \mid \text{First red}) = \frac{2}{9}
+   \]
+
+4. **Combined Probability:**
+   - Multiply the probabilities of both independent events:
+   \[
+   P(\text{Both red}) = P(\text{First red}) \times P(\text{Second red} \mid \text{First red}) = \frac{3}{10} \times \frac{2}{9}
+   \]
+   \[
+   P(\text{Both red}) = \frac{6}{90} = \frac{1}{15}
+   \]
+
+**Final Answer:**
+\[
+\boxed{\dfrac{1}{15}}
+\]",35,333,368,2.1745,153.14,,,,mistral-small-2506,1.0,1.0,factual
+7,Solve for x: 3x + 7 = 22.,"To solve the equation \( 3x + 7 = 22 \) for \( x \), follow these steps:
+
+1. **Subtract 7 from both sides** to isolate the term with \( x \):
+   \[
+   3x + 7 - 7 = 22 - 7
+   \]
+   \[
+   3x = 15
+   \]
+
+2. **Divide both sides by 3** to solve for \( x \):
+   \[
+   \frac{3x}{3} = \frac{15}{3}
+   \]
+   \[
+   x = 5
+   \]
+
+**Final Answer:**
+\[
+\boxed{5}
+\]",19,149,168,1.2674,117.56,,,,mistral-small-2506,1.0,1.0,factual
+8,"What is the next number in the sequence: 2, 6, 12, 20, 30, 42, ...?","Alright, let's tackle this sequence step by step. We have the following numbers:
+
+2, 6, 12, 20, 30, 42, ...
+
+### Step 1: Observing the Sequence
+First, let's list out the terms with their positions to see if that helps:
+
+- Term 1: 2
+- Term 2: 6
+- Term 3: 12
+- Term 4: 20
+- Term 5: 30
+- Term 6: 42
+- Term 7: ?
+
+### Step 2: Calculating the Differences Between Consecutive Terms
+One common approach is to look at the differences between consecutive terms to see if there's a pattern.
+
+- Difference between Term 2 and Term 1: 6 - 2 = 4
+- Difference between Term 3 and Term 2: 12 - 6 = 6
+- Difference between Term 4 and Term 3: 20 - 12 = 8
+- Difference between Term 5 and Term 4: 30 - 20 = 10
+- Difference between Term 6 and Term 5: 42 - 30 = 12
+
+So, the sequence of differences is: 4, 6, 8, 10, 12, ...
+
+### Step 3: Analyzing the Differences
+Now, let's look at the sequence of differences: 4, 6, 8, 10, 12, ...
+
+This is an arithmetic sequence where each term increases by 2.
+
+- 4 + 2 = 6
+- 6 + 2 = 8
+- 8 + 2 = 10
+- 10 + 2 = 12
+- 12 + 2 = 14
+
+So, the next difference should be 14.
+
+### Step 4: Finding the Next Term in the Original Sequence
+To find the next term in the original sequence, we add the next difference to the last term we have:
+
+Last term: 42
+Next difference: 14
+Next term: 42 + 14 = 56
+
+### Step 5: Verifying the Pattern
+Let's see if this makes sense by checking if the pattern holds for the entire sequence.
+
+If we consider the differences increasing by 2 each time, starting from 4:
+
+- Term 1: 2
+- Term 2: 2 + 4 = 6
+- Term 3: 6 + 6 = 12
+- Term 4: 12 + 8 = 20
+- Term 5: 20 + 10 = 30
+- Term 6: 30 + 12 = 42
+- Term 7: 42 + 14 = 56
+
+This checks out perfectly.
+
+### Step 6: Exploring Alternative Patterns
+It's always good to check if there are other possible patterns that could fit the given sequence to ensure that our answer is robust.
+
+**Alternative Approach: Multiples of Numbers**
+
+Let's see if the terms relate to multiples of consecutive integers:
+
+- 2 = 1 × 2
+- 6 = 2 × 3
+- 12 = 3 × 4
+- 20 = 4 × 5
+- 30 = 5 × 6
+- 42 = 6 × 7
+- Next term would be 7 × 8 = 56
+
+This is a very clean and simple pattern where each term is the product of two consecutive integers: n × (n + 1).
+
+This confirms our earlier finding that the next term is indeed 56.
+
+**Another Alternative: Sum of Consecutive Integers**
+
+Another way to look at it is as the sum of the first n even numbers:
+
+- Sum of first 1 even number: 2
+- Sum of first 2 even numbers: 2 + 4 = 6
+- Sum of first 3 even numbers: 2 + 4 + 6 = 12
+- And so on...
+
+This also leads us to the same sequence, reinforcing that the next term is 56.
+
+### Step 7: Conclusion
+After exploring multiple approaches—differences between terms, products of consecutive integers, and sums of even numbers—all consistently point to the next term in the sequence being **56**.
+
+### Final Answer
+The next number in the sequence is **56**.",36,977,1013,6.5191,149.87,,,,mistral-small-2506,1.0,1.0,factual
+9,"A tank can be filled by Pipe A in 3 hours and drained by Pipe B in 4 hours. If both pipes are opened at the same time, how long will it take to fill an empty tank?","To determine how long it will take to fill the empty tank when both **Pipe A** (filling) and **Pipe B** (draining) are opened simultaneously, follow these steps:
+
+### **Step 1: Determine the Rates of Each Pipe**
+
+- **Pipe A (Filling):**
+  - Fills the tank in **3 hours**.
+  - **Filling rate** = \( \frac{1 \text{ tank}}{3 \text{ hours}} = \frac{1}{3} \) tank per hour.
+
+- **Pipe B (Draining):**
+  - Drains the tank in **4 hours**.
+  - **Draining rate** = \( \frac{1 \text{ tank}}{4 \text{ hours}} = \frac{1}{4} \) tank per hour.
+
+### **Step 2: Calculate the Net Rate When Both Pipes Are Open**
+
+When both pipes are open, their rates combine. Since Pipe A fills and Pipe B drains, the **net rate** is:
+
+\[
+\text{Net rate} = \text{Filling rate} - \text{Draining rate} = \frac{1}{3} - \frac{1}{4}
+\]
+
+To subtract the fractions, find a common denominator (which is 12):
+
+\[
+\frac{1}{3} = \frac{4}{12} \quad \text{and} \quad \frac{1}{4} = \frac{3}{12}
+\]
+
+\[
+\text{Net rate} = \frac{4}{12} - \frac{3}{12} = \frac{1}{12} \text{ tank per hour}
+\]
+
+### **Step 3: Determine the Time to Fill the Tank**
+
+The net rate tells us that the tank fills at \( \frac{1}{12} \) of its capacity each hour. To find the time (\( t \)) it takes to fill **1 tank**, set up the equation:
+
+\[
+\frac{1}{12} \times t = 1
+\]
+
+Solve for \( t \):
+
+\[
+t = 12 \text{ hours}
+\]
+
+### **Final Answer**
+
+\[
+\boxed{12 \text{ hours}}
+\]",46,469,515,3.2488,144.36,,,,mistral-small-2506,1.0,1.0,factual
+10,Write a Python function named `is_palindrome` that checks if a given string is a palindrome. Return a boolean.,"Here is a Python function named `is_palindrome` that checks if a given string is a palindrome:
+
+```python
+def is_palindrome(s):
+    # Remove all non-alphanumeric characters and convert to lowercase
+    cleaned = ''.join(c for c in s if c.isalnum()).lower()
+    # Check if the cleaned string is equal to its reverse
+    return cleaned == cleaned[::-1]
+```
+
+### Explanation:
+1. **Cleaning the String**:
+   - The function first processes the input string `s` to remove all non-alphanumeric characters (like spaces, punctuation, etc.) using `isalnum()`.
+   - The cleaned string is then converted to lowercase to ensure the check is case-insensitive.
+
+2. **Palindrome Check**:
+   - The cleaned string is compared to its reverse (`cleaned[::-1]`). If they are the same, the string is a palindrome, and the function returns `True`; otherwise, it returns `False`.
+
+### Example Usage:
+```python
+print(is_palindrome(""A man, a plan, a canal: Panama""))  # Output: True
+print(is_palindrome(""racecar""))  # Output: True
+print(is_palindrome(""hello""))  # Output: False
+```
+
+This function handles edge cases like mixed cases, spaces, and punctuation, making it robust for general use.",29,294,323,1.9027,154.52,,,,mistral-small-2506,1.0,1.0,factual
+11,"Identify the syntax or runtime error in this JavaScript code snippet and explain how to fix it:
+const user = { name: 'Alice' };
+user = { name: 'Bob' };","The error in this JavaScript code snippet is a **runtime error** (specifically a `TypeError`) caused by attempting to reassign a constant variable (`const user`).
+
+### Explanation:
+1. In JavaScript, `const` declares a block-scoped variable that cannot be reassigned after its initial assignment.
+2. The first line `const user = { name: 'Alice' };` correctly initializes the `user` constant with an object.
+3. The second line `user = { name: 'Bob' };` tries to reassign the `user` variable, which is not allowed with `const`.
+
+### Error Message:
+If you run this code, you'll get:
+```
+TypeError: Assignment to constant variable.
+```
+
+### How to Fix It:
+1. **If you want to reassign the variable**, use `let` instead of `const`:
+   ```javascript
+   let user = { name: 'Alice' };
+   user = { name: 'Bob' }; // This works now
+   ```
+
+2. **If you want to keep the variable constant but modify its properties**, you can do so (since `const` only prevents reassignment, not mutation of the object's properties):
+   ```javascript
+   const user = { name: 'Alice' };
+   user.name = 'Bob'; // This works (modifies the object's property)
+   ```
+
+3. **If you want to replace the entire object**, you must use `let` (as shown in the first fix).
+
+### Key Takeaway:
+- `const` prevents reassignment of the variable, but does not make the object immutable (you can still modify its properties).
+- Use `let` if you need to reassign the variable to a new object.",42,360,402,2.3974,150.16,,,,mistral-small-2506,0.8333333333333334,1.0,factual
+12,What is the time complexity of looking up a key in a well-distributed Hash Map (or Python dictionary) in the average case versus the worst case?,"In a **well-distributed Hash Map** (or Python dictionary), the time complexity for looking up a key depends on the hash function's behavior and the load factor (how full the hash table is).
+
+### **Average Case (Good Hash Function, Low Collisions)**
+- **Time Complexity:** **O(1)** (constant time)
+  - If the hash function distributes keys uniformly and the load factor is kept low (e.g., by resizing the table when it gets too full), collisions are rare.
+  - The lookup involves computing the hash, finding the bucket, and checking at most one or a few entries (depending on collision resolution).
+
+### **Worst Case (Poor Hash Function, High Collisions)**
+- **Time Complexity:** **O(n)** (linear time)
+  - If all keys collide (e.g., due to a bad hash function or a malicious adversary), the hash map degenerates into a linked list (or a tree, in Python's case).
+  - In this scenario, the lookup must check every key in the worst case.
+
+### **Python Dictionary (Specifics)**
+- Python dictionaries use **open addressing with probing** (for small tables) and **separate chaining with trees** (for larger tables when collisions exceed a threshold).
+- In the worst case (all keys collide), Python uses a **balanced tree (BST)** for collision resolution, which gives **O(log n)** time per lookup (instead of O(n)).
+- However, if the hash function is bad and the tree becomes unbalanced, the worst case can still degrade to **O(n)** (though this is rare in practice).
+
+### **Summary**
+| Scenario          | Time Complexity |
+|-------------------|-----------------|
+| **Average Case**  | O(1)            |
+| **Worst Case**    | O(n) (or O(log n) in Python) |
+
+In practice, a well-designed hash map (with a good hash function and proper resizing) will almost always perform at **O(1)** for lookups. The worst case is rare but possible if the hash function is poorly chosen or the table is overloaded.",34,450,484,2.8527,157.75,,,,mistral-small-2506,1.0,0.8571428571428571,factual
+13,"Write a SQL query to find the second highest salary from an `employees` table containing columns `id` and `salary`. If there is no second highest salary, return NULL.","# SQL Query to Find the Second Highest Salary
+
+Here are several approaches to find the second highest salary from an `employees` table:
+
+## Option 1: Using LIMIT and OFFSET (MySQL, PostgreSQL, SQLite)
+
+```sql
+SELECT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+```
+
+## Option 2: Using Subquery with MAX
+
+```sql
+SELECT MAX(salary) AS second_highest_salary
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+```
+
+## Option 3: Using DENSE_RANK (Works in most modern SQL databases)
+
+```sql
+SELECT salary AS second_highest_salary
+FROM (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) as rank
+    FROM employees
+) ranked_salaries
+WHERE rank = 2;
+```
+
+## Option 4: Using ROW_NUMBER (Alternative to DENSE_RANK)
+
+```sql
+SELECT salary AS second_highest_salary
+FROM (
+    SELECT salary, ROW_NUMBER() OVER (ORDER BY salary DESC) as row_num
+    FROM employees
+) numbered_salaries
+WHERE row_num = 2;
+```
+
+## Handling NULL when no second highest exists
+
+All of these queries will return NULL if there is no second highest salary (i.e., if there's only one employee or all employees have the same salary).
+
+The most portable solution is Option 2 (using subquery with MAX), as it works across most SQL dialects. Option 3 (DENSE_RANK) is also very reliable and handles ties properly.",40,331,371,2.3359,141.7,,,,mistral-small-2506,1.0,1.0,factual
+14,"In Python, what is the difference between `__init__` and `__new__` tools?","In Python, both `__init__` and `__new__` are special methods (also called ""magic methods"" or ""dunder methods"") used in class definitions, but they serve different purposes in object creation and initialization.
+
+### **1. `__new__` Method**
+- **Purpose**: Responsible for **creating** a new instance of a class.
+- **Return Value**: Must return a new instance of the class (or a subclass).
+- **When Called**: Before `__init__`, when an object is instantiated.
+- **Use Case**: Useful when you need to control how an object is constructed (e.g., for singleton patterns, immutable objects, or customizing instance creation).
+
+#### **Example:**
+```python
+class MyClass:
+    def __new__(cls, *args, **kwargs):
+        print(""__new__ called"")
+        instance = super().__new__(cls)  # Required to create the instance
+        return instance
+
+    def __init__(self, value):
+        print(""__init__ called"")
+        self.value = value
+
+obj = MyClass(10)
+```
+**Output:**
+```
+__new__ called
+__init__ called
+```
+
+### **2. `__init__` Method**
+- **Purpose**: Responsible for **initializing** the newly created instance.
+- **Return Value**: Should not return anything (implicitly returns `None`).
+- **When Called**: After `__new__`, when an object is instantiated.
+- **Use Case**: Used to set initial values for the object's attributes.
+
+#### **Example:**
+```python
+class MyClass:
+    def __init__(self, value):
+        print(""__init__ called"")
+        self.value = value
+
+obj = MyClass(10)
+```
+**Output:**
+```
+__init__ called
+```
+
+### **Key Differences**
+| Feature          | `__new__` | `__init__` |
+|------------------|-----------|------------|
+| **Purpose**      | Creates the instance | Initializes the instance |
+| **Return Value** | Must return an instance | Should return `None` |
+| **When Called**  | Before `__init__` | After `__new__` |
+| **Use Case**     | Custom object creation (e.g., singletons, immutable objects) | Setting initial attributes |
+
+### **When to Use Each?**
+- Use `__new__` when you need to control **how** an object is created (e.g., overriding instance creation).
+- Use `__init__` when you need to set up the object's initial state (e.g., assigning attributes).
+
+### **Example: Singleton Pattern (Using `__new__`)**
+```python
+class Singleton:
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+    def __init__(self, value):
+        if not hasattr(self, 'initialized'):
+            self.value = value
+            self.initialized = True
+
+obj1 = Singleton(10)
+obj2 = Singleton(20)
+print(obj1.value)  # Output: 10
+print(obj2.value)  # Output: 10 (same instance)
+```
+
+### **Conclusion**
+- `__new__` is called first to **create** the object.
+- `__init__` is called next to **initialize** the object.
+- You rarely need to override `__new__` unless you have a specific need (like singletons or immutable objects). Most of the time, `__init__` is sufficient for initialization.",22,747,769,5.5415,134.8,,,,mistral-small-2506,1.0,1.0,factual
+15,What does the HTTP 403 status code represent?,"The **HTTP 403 Forbidden** status code indicates that the server understood the request but refuses to authorize it. This means the client does not have the necessary permissions to access the requested resource, even if the request is syntactically correct.
+
+### Common Causes of a 403 Error:
+1. **Insufficient Permissions** – The user lacks the required access rights (e.g., trying to access an admin-only page without proper authentication).
+2. **Incorrect File Permissions** – The server's file or directory permissions are misconfigured (e.g., `chmod` settings on Unix-based systems).
+3. **Missing Authentication** – The request lacks valid credentials (e.g., no API key, expired session).
+4. **IP Blocking** – The server is blocking requests from certain IP addresses (e.g., due to security policies).
+5. **Hotlinking Protection** – The server prevents external sites from directly linking to its resources.
+6. **Web Application Firewall (WAF) Rules** – Security rules may block requests deemed suspicious.
+7. **Incorrect `.htaccess` Rules** – Misconfigured server directives (e.g., in Apache) may deny access.
+
+### How to Fix a 403 Error:
+- **Check Permissions** – Ensure files and directories have the correct read/execute permissions.
+- **Verify Authentication** – Provide valid credentials (e.g., login, API key).
+- **Review Server Configurations** – Check `.htaccess`, `nginx.conf`, or `httpd.conf` for restrictive rules.
+- **Disable Hotlinking** – If intentional, adjust server settings to allow external access.
+- **Whitelist IPs** – If blocked, ensure your IP is allowed in firewall rules.
+
+### Example Scenarios:
+- Trying to access `/admin` without logging in → **403 Forbidden**.
+- A script trying to read a file with restricted permissions → **403 Forbidden**.
+- A bot hitting a rate-limited endpoint → **403 Forbidden**.
+
+Unlike **401 Unauthorized** (which suggests authentication is needed), **403 Forbidden** means authentication won’t help—access is explicitly denied.",15,452,467,3.0983,145.89,,,,mistral-small-2506,1.0,1.0,factual
+16,Explain the concept of 'closures' in JavaScript with a brief architectural description.,"### **Closures in JavaScript**
+
+A **closure** in JavaScript is a function that retains access to its **lexical scope** (variables from its outer function) even after the outer function has finished executing. This means a closure ""remembers"" the environment in which it was created, including all variables that were in scope at the time of its creation.
+
+### **Key Characteristics of Closures**
+1. **Function inside a function** – A closure is typically formed when a nested function is returned or accessed from an outer function.
+2. **Preserves outer variables** – The inner function retains access to variables from its parent scope.
+3. **Encapsulation** – Closures help in data privacy by hiding variables from the global scope.
+
+### **Architectural Description**
+Closures are a fundamental concept in JavaScript that enable:
+- **Encapsulation** – Variables inside a closure are not accessible from outside, allowing for private state.
+- **Function factories** – Functions can be dynamically generated with predefined behaviors.
+- **Event handlers & callbacks** – Closures help maintain state in asynchronous operations.
+
+### **Example**
+```javascript
+function outerFunction() {
+    let outerVar = ""I'm outside!"";
+
+    function innerFunction() {
+        console.log(outerVar); // Accesses outerVar even after outerFunction has finished
+    }
+
+    return innerFunction;
+}
+
+const myClosure = outerFunction();
+myClosure(); // Output: ""I'm outside!""
+```
+Here, `innerFunction` is a closure that remembers `outerVar` even after `outerFunction` has executed.
+
+### **Use Cases**
+- **Data privacy** (e.g., module pattern)
+- **Event handlers** (maintaining state)
+- **Currying & partial application** (functional programming)
+
+Closures are a powerful feature that allows JavaScript to manage state in a flexible and efficient way.",20,386,406,2.6919,143.39,,,,mistral-small-2506,0.9166666666666666,1.0,factual
+17,"In Git, what is the functional difference between `git fetch` and `git pull`?","In Git, `git fetch` and `git pull` are both used to interact with a remote repository, but they serve different purposes:
+
+### **`git fetch`**
+- **Function**: Downloads the latest changes from the remote repository **without merging them** into your local branches.
+- **Effect**:
+  - Updates your local references (e.g., `origin/main`) to match the remote.
+  - Does **not** modify your working directory or local branches.
+  - Allows you to review changes before integrating them.
+- **Use Case**:
+  - When you want to see what changes are available remotely before merging.
+  - When you want to inspect changes using `git diff` or `git log` before applying them.
+
+### **`git pull`**
+- **Function**: Fetches changes from the remote **and automatically merges them** into your current branch.
+- **Effect**:
+  - Equivalent to running `git fetch` followed by `git merge` (or `git rebase`, depending on configuration).
+  - Updates your working directory and local branch with the latest changes.
+- **Use Case**:
+  - When you want to quickly incorporate remote changes into your local branch.
+  - When you are sure the remote changes won’t cause conflicts.
+
+### **Key Difference**
+| Command  | Fetches Changes? | Merges Changes? | Modifies Working Directory? |
+|----------|------------------|-----------------|-----------------------------|
+| `git fetch` | ✅ Yes | ❌ No | ❌ No |
+| `git pull`  | ✅ Yes | ✅ Yes | ✅ Yes |
+
+### **Example Workflow**
+1. **Safe Approach**:
+   ```sh
+   git fetch
+   git diff origin/main  # Review changes
+   git merge origin/main # Merge manually
+   ```
+2. **Quick Update**:
+   ```sh
+   git pull
+   ```
+
+### **Best Practices**
+- Use `git fetch` when you want to inspect changes before merging.
+- Use `git pull` when you trust the remote changes and want a quick update.
+- Configure `git pull` to use `--rebase` instead of `--merge` for cleaner history:
+  ```sh
+  git config --global pull.rebase true
+  ```
+
+Would you like further clarification on any part?",21,480,501,3.666,130.93,,,,mistral-small-2506,0.9473684210526315,0.9285714285714286,factual
+18,What HTML tags are used to create a numbered itemized list?,"In HTML, you can create a **numbered list** (ordered list) and an **itemized list** (unordered list) using the following tags:
+
+### **1. Ordered List (Numbered List)**
+- **`<ol>`** – Defines the ordered list.
+- **`<li>`** – Defines each list item.
+
+**Example:**
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+**Output:**
+1. First item
+2. Second item
+3. Third item
+
+### **2. Unordered List (Itemized List)**
+- **`<ul>`** – Defines the unordered list.
+- **`<li>`** – Defines each list item.
+
+**Example:**
+```html
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+```
+**Output:**
+- First item
+- Second item
+- Third item
+
+### **Additional Notes:**
+- You can **nest lists** inside `<ol>` or `<ul>` for hierarchical structures.
+- The `<li>` tag is required for each list item.
+- You can customize list styles using **CSS** (e.g., changing bullet points or numbering styles).
+
+Would you like an example of a nested list? 😊",16,292,308,2.1597,135.2,,,,mistral-small-2506,0.5,1.0,factual
+19,Write a regular expression (Regex) that validates a standard IPv4 address configuration format.,"To validate a standard IPv4 address configuration format using a regular expression (Regex), you need to ensure the address follows the correct structure: four decimal numbers separated by dots, where each number is between `0` and `255` (inclusive).
+
+Here’s a Regex that accomplishes this:
+
+```regex
+^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+```
+
+### Explanation:
+- `^` and `$` ensure the entire string is an IPv4 address (no extra characters allowed).
+- Each octet (number between dots) is validated by:
+  - `25[0-5]` → Matches `250` to `255`.
+  - `2[0-4][0-9]` → Matches `200` to `249`.
+  - `[01]?[0-9][0-9]?` → Matches `0` to `199` (with optional leading `0` or `1`).
+- The `\.` ensures a literal dot separates the octets.
+
+### Example Matches:
+- `192.168.1.1`
+- `10.0.0.1`
+- `255.255.255.255`
+
+### Example Non-Matches:
+- `256.1.1.1` (invalid octet)
+- `192.168.1` (missing octet)
+- `192.168.1.1.1` (extra octet)
+- `abc.def.ghi.jkl` (non-numeric)
+
+### Variations:
+- If leading zeros are **not allowed** (e.g., `01.02.03.04` should fail), use:
+  ```regex
+  ^(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])$
+  ```
+  (This ensures numbers like `01` are invalid unless they are `0`.)
+
+This Regex ensures strict validation of IPv4 addresses in the standard format.",20,695,715,4.5622,152.34,,,,mistral-small-2506,1.0,1.0,factual
+20,Write a short paragraph about traveling to Mars. Constraint: Do not use the letter 'e' anywhere in your response.,"Traveling to Mars is a grand goal for humankind. Astronauts will fly through vast, dark voids, facing harsh trials. Robots may aid in this task, but human spirit will push limits. A trip to Mars will take months, with no way back soon. Once there, explorers will study its dusty, dry land, seeking signs of past or present life. This journey will inspire many, showing what’s possible with bold dreams.",27,94,121,0.8048,116.8,,,,mistral-small-2506,0.2727272727272727,,constraint
+21,Give me a list of three popular fruit varieties. Format your entire response strictly as a valid CSV string with headers 'Fruit' and 'Color'. Do not add conversational filler.,"```csv
+Fruit,Color
+Apple,Red
+Banana,Yellow
+Orange,Orange
+```",40,23,63,0.4166,55.21,,,,mistral-small-2506,1.0,1.0,factual
+22,Draft a professional sign-off email for a project delivery. Your final output must contain exactly 45 words.,"**Subject:** Project Delivery Confirmation
+
+Dear [Recipient's Name],
+
+Thank you for your collaboration on this project. The deliverables have been successfully completed and shared as agreed. Please review and let me know if you require any further support. I appreciate your partnership and look forward to future opportunities.
+
+Best regards,
+[Your Name]
+[Your Position]
+[Your Contact Information]",25,78,103,0.8268,94.34,,,,mistral-small-2506,1.0,,constraint
+23,Answer the following question: 'Why is the sky blue?' Answer it in exactly three distinct sentences. The first sentence must end with a question mark. The second sentence must start with the word 'Because'. The third sentence must mention an optical phenomena.,"Why does the sky appear blue to our eyes? Because sunlight scatters more in the blue wavelengths when it passes through Earth's atmosphere. This scattering, known as Rayleigh scattering, is an optical phenomenon that makes the sky blue.",53,48,101,0.5695,84.28,,,,mistral-small-2506,0.5,1.0,factual
+24,"Provide a motivational quote, then translate it to French, and finally translate it to Spanish. Separate each section with a line of exactly 5 hyphens (-----).","Here’s your motivational quote in three languages:
+
+**""Believe you can and you're halfway there.""**
+-----**
+**""Croyez que vous pouvez et vous êtes à mi-chemin.""**
+-----**
+**""Cree que puedes y ya estás a mitad de camino.""**",39,55,94,0.5697,96.55,,,,mistral-small-2506,0.75,0.5,factual
+25,"Generate 3 random passwords. Each password must be exactly 8 characters long, contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special symbol. Format them as a numbered list.","Here are three randomly generated 8-character passwords that meet your requirements:
+
+1. **7x@L9p#Q**
+2. **k3$Tm5*R**
+3. **P@8n2d!F**",49,51,100,0.6085,83.81,,,,mistral-small-2506,1.0,,constraint
+26,"Explain global warming using an analogy of a greenhouse. Rule: Use uppercase letters for every single vowel (A, E, I, O, U) in your text.","H**E**R**E**’S A SIMPLE ANALOGY T**O** UNDERSTAND GL**O**B**A**L W**A**RMING USING A GR**EE**NHOUSE:
+
+IMAGINE **A** GR**EE**NHOUSE **O**N **A** SUNSHIN**E**-FILLED DAY. TH**E** SUN’S R**AY**S P**A**SS THR**O**UGH TH**E** GL**A**SS, W**A**RMING TH**E** AIR INSID**E**. BUT WH**E**N TH**E** H**E**AT TR**I**ES T**O** ESCAP**E**, TH**E** GL**A**SS TR**A**PS IT INSID**E**, K**E**EPING TH**E** GR**EE**NHOUSE W**A**RM**E**R TH**A**N TH**E** OUTSID**E**.
+
+TH**A**T’S HOW TH**E** **E**ARTH’S ATM**O**SPH**E**R**E** WORKS. GREENHOUSE G**A**S**E**S (LIK**E** C**O**2) ACT LIKE TH**E** GL**A**SS **O**F TH**E** GR**EE**NHOUSE. TH**E**Y L**E**T SUNLIGHT **I**N, BUT TR**A**P TH**E** H**E**AT **O**N **E**ARTH, MAKING TH**E** PLAN**E**T GR**A**DUALLY W**A**RM**E**R.
+
+JUST LIKE **A** GR**EE**NHOUSE G**E**TS T**O**O H**O**T IF TH**E**R**E**’S T**O**O MUCH H**E**AT TRAPPED, **O**UR PLAN**E**T IS W**A**RMING BECAUSE **O**F T**O**O MUCH GREENHOUSE G**A**S. TH**I**S L**E**ADS T**O** M**E**LTING **I**C**E**, RISING S**E**A L**E**V**E**LS, **A**ND EXT**R**EM**E** W**E**ATHER.
+
+TH**E** M**O**R**E** GREENHOUSE G**A**S**E**S W**E** ADD, TH**E** M**O**R**E** H**E**AT G**E**TS TRAPPED—JUST LIKE **A** GR**EE**NHOUSE WITH **A** THICKER GL**A**SS.",38,626,664,3.9718,157.61,,,,mistral-small-2506,0.9166666666666666,,constraint
+27,"Provide the capitals of Japan, France, and Canada. Your output should only contain the names of the cities separated by semicolons, with absolutely no punctuation or text at the end.",Tokyo; Paris; Ottawa,43,6,49,0.3289,18.25,,,,mistral-small-2506,1.0,1.0,factual
+28,Write a haiku about artificial intelligence. (A haiku must follow a 5-7-5 syllable structure).,"**Silicon dreams hum,**
+**learning light in endless code—**
+**will it ever know?**",27,22,49,0.4181,52.62,,,,mistral-small-2506,1.0,1.0,factual
+29,Summarize the importance of bees to the ecosystem. Your summary must be structured as a single JSON object containing two keys: 'ecological_impact' and 'agricultural_impact'.,"```json
+{
+  ""ecological_impact"": ""Bees play a crucial role in maintaining biodiversity by pollinating wild plants, which supports the reproduction of numerous species and sustains healthy ecosystems. Their pollination efforts help maintain plant populations, which in turn provide habitat and food for other wildlife."",
+  ""agricultural_impact"": ""Bees are vital to global agriculture, as they pollinate many crops, including fruits, vegetables, and nuts. Their pollination services contribute significantly to food production, enhancing crop yields and quality, and supporting the livelihoods of farmers worldwide.""
+}
+```",44,123,167,1.0341,118.94,,,,mistral-small-2506,0.9,,constraint

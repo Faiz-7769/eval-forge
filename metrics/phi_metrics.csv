@@ -1,0 +1,551 @@
+question_id,question,answer,prompt_tokens,output_tokens,total_tokens,latency_sec,tokens_per_sec,gpu_usage_pct,gpu_temp_c,gpu_mem_used_mb,model
+0,"A train leaves Station A traveling at 60 mph. Two hours later, a second train leaves Station A on the same track traveling at 90 mph. How many hours will it take the second train to catch up to the first train?","To solve this problem, we need to determine when the second train will catch up to the first train.
+
+1. **Calculate the head start of the first train:**
+
+   The first train travels for 2 hours before the second train starts. Since it travels at 60 mph, the distance it covers in those 2 hours is:
+
+   \[
+   \text{Distance} = \text{Speed} \times \text{Time} = 60 \, \text{mph} \times 2 \, \text{hours} = 120 \, \text{miles}
+   \]
+
+2. **Set up the equation for when the second train catches up:**
+
+   Let \( t \) be the time in hours it takes for the second train to catch up after it starts. In this time, the second train travels:
+
+   \[
+   \text{Distance traveled by second train} = 90 \, \text{mph} \times t
+   \]
+
+   During the same time \( t \), the first train continues to travel. Since it already has a 2-hour head start, the total time the first train travels is \( t + 2 \) hours. Thus, the distance it covers is:
+
+   \[
+   \text{Distance traveled by first train} = 60 \, \text{mph} \times (t + 2)
+   \]
+
+3. **Set the distances equal to find when the second train catches up:**
+
+   The second train catches up when both have traveled the same distance from Station A:
+
+   \[
+   90t = 60(t + 2)
+   \]
+
+4. **Solve the equation:**
+
+   \[
+   90t = 60t + 120
+   \]
+
+   Subtract \( 60t \) from both sides:
+
+   \[
+   30t = 120
+   \]
+
+   Divide both sides by 30:
+
+   \[
+   t = 4
+   \]
+
+Thus, it will take the second train 4 hours to catch up to the first train.",55,435,490,68.088,6.39,100,82,10070.19,deepseek
+1,"If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?","To solve this problem, we need to understand the pattern of the clock striking. When a clock strikes 6 times, it actually involves 5 intervals between the strikes. If it takes 5 seconds for 6 strikes, then these 5 seconds are the time for the 5 intervals.
+
+First, calculate the duration of one interval:
+
+\[
+\text{Time for one interval} = \frac{5 \text{ seconds}}{5 \text{ intervals}} = 1 \text{ second per interval}
+\]
+
+Now, consider the clock striking 12 times. There will be 11 intervals between the 12 strikes.
+
+Calculate the total time for 11 intervals:
+
+\[
+\text{Total time for 11 intervals} = 11 \times 1 \text{ second per interval} = 11 \text{ seconds}
+\]
+
+Therefore, it will take 11 seconds for the clock to strike 12 times.",31,192,223,29.2586,6.56,100,77,10070.19,deepseek
+2,"All prompt engineers are tech enthusiasts. Some tech enthusiasts are gamers. No gamers are professional writers. Based on these rules, is it definitely true that some prompt engineers are not professional writers?","To determine whether it is definitely true that some prompt engineers are not professional writers, let's analyze the given statements:
+
+1. All prompt engineers are tech enthusiasts.
+2. Some tech enthusiasts are gamers.
+3. No gamers are professional writers.
+
+From these statements, we can draw the following conclusions:
+
+- Since all prompt engineers are tech enthusiasts, they are part of the larger group of tech enthusiasts.
+- Some tech enthusiasts are gamers, but this does not specify that all tech enthusiasts are gamers. Therefore, it is possible that some tech enthusiasts are not gamers.
+- No gamers are professional writers, which means that the group of gamers and the group of professional writers do not overlap.
+
+Now, let's consider the relationship between prompt engineers and professional writers:
+
+- Since some tech enthusiasts are gamers and no gamers are professional writers, it follows that some tech enthusiasts cannot be professional writers (specifically, those who are gamers).
+- However, not all tech enthusiasts are gamers, so there are tech enthusiasts who are not gamers and could potentially be professional writers.
+- Since all prompt engineers are tech enthusiasts, they could either be among the tech enthusiasts who are gamers (and thus not professional writers) or among those who are not gamers (and could potentially be professional writers).
+
+The key point is that there is no direct statement linking prompt engineers to professional writers. The only connection is through the intermediary group of gamers, which only some tech enthusiasts belong to.
+
+Therefore, while it is possible for some prompt engineers to be gamers (and thus not professional writers), it is not definitively true for all prompt engineers. There could be prompt engineers who are not gamers and could potentially be professional writers.
+
+Thus, it is not definitely true that some prompt engineers are not professional writers. The information provided does not guarantee this conclusion.",44,359,403,55.2869,6.49,100,78,10070.19,deepseek
+3,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?,"Let's denote the cost of the ball as \( x \). According to the problem, the bat costs $1.00 more than the ball, so the cost of the bat is \( x + 1.00 \).
+
+The total cost of the bat and the ball is $1.10. Therefore, we can set up the following equation:
+
+\[
+x + (x + 1.00) = 1.10
+\]
+
+Simplifying the equation:
+
+\[
+2x + 1.00 = 1.10
+\]
+
+Subtract 1.00 from both sides:
+
+\[
+2x = 0.10
+\]
+
+Divide both sides by 2:
+
+\[
+x = 0.05
+\]
+
+Thus, the ball costs $0.05.",39,166,205,25.5665,6.49,100,77,10070.19,deepseek
+4,"If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","To solve this problem, we first need to understand the rate at which the machines produce widgets.
+
+Given:
+- 5 machines take 5 minutes to make 5 widgets.
+
+From this, we can determine the rate of production:
+- 5 machines make 5 widgets in 5 minutes, which means 1 machine makes 1 widget in 5 minutes.
+
+Now, let's determine how long it would take 100 machines to make 100 widgets:
+- Since 1 machine makes 1 widget in 5 minutes, 100 machines would also make 100 widgets in 5 minutes. This is because each machine is working independently and simultaneously, so the time taken remains the same as for one machine to make one widget.
+
+Therefore, it would take 100 machines 5 minutes to make 100 widgets.",35,165,200,25.3543,6.51,100,77,10070.19,deepseek
+5,"You are facing two doors. One leads to freedom, the other to certain doom. One guard stands at each door; one always lies, and the other always tells the truth. You do not know which is which. You can ask exactly one guard one question. What do you ask to find the door to freedom?","To determine which door leads to freedom, you can ask either guard the following question:
+
+""Which door would the other guard say leads to freedom?""
+
+Here's the reasoning:
+
+1. **If you ask the truth-telling guard**: 
+   - The truth-teller knows the liar would point to the door leading to certain doom (since the liar always lies).
+   - Therefore, the truth-teller will indicate the door to certain doom.
+
+2. **If you ask the lying guard**:
+   - The liar knows the truth-teller would point to the door leading to freedom.
+   - However, since the liar always lies, they will point to the door leading to certain doom instead.
+
+In both scenarios, the guard you ask will indicate the door leading to certain doom. Therefore, you should choose the opposite door to find the path to freedom.",71,172,243,27.3933,6.28,100,77,10070.19,deepseek
+6,"A box contains 3 red apples and 7 green apples. If you select two apples at random without replacement, what is the probability that both are red?","To find the probability that both apples selected are red, we can use the concept of probability without replacement.
+
+First, calculate the total number of ways to select 2 apples from the 10 apples (3 red and 7 green):
+
+\[
+\binom{10}{2} = \frac{10 \times 9}{2 \times 1} = 45
+\]
+
+Next, calculate the number of ways to select 2 red apples from the 3 red apples:
+
+\[
+\binom{3}{2} = \frac{3 \times 2}{2 \times 1} = 3
+\]
+
+Now, the probability that both apples selected are red is the ratio of the number of favorable outcomes to the total number of outcomes:
+
+\[
+\text{Probability} = \frac{\binom{3}{2}}{\binom{10}{2}} = \frac{3}{45} = \frac{1}{15}
+\]
+
+Thus, the probability that both apples selected are red is \(\frac{1}{15}\).",39,222,261,34.1387,6.5,100,78,10070.19,deepseek
+7,Solve for x: 3x + 7 = 22.,"To solve the equation \(3x + 7 = 22\), follow these steps:
+
+1. Subtract 7 from both sides of the equation to isolate the term with \(x\):
+
+   \[
+   3x + 7 - 7 = 22 - 7
+   \]
+
+   \[
+   3x = 15
+   \]
+
+2. Divide both sides by 3 to solve for \(x\):
+
+   \[
+   \frac{3x}{3} = \frac{15}{3}
+   \]
+
+   \[
+   x = 5
+   \]
+
+So, the solution is \(x = 5\).",22,139,161,21.4265,6.49,100,77,10070.19,deepseek
+8,"What is the next number in the sequence: 2, 6, 12, 20, 30, 42, ...?","To find the next number in the sequence 2, 6, 12, 20, 30, 42, ..., let's first look for a pattern.
+
+Consider the differences between consecutive terms:
+
+- \(6 - 2 = 4\)
+- \(12 - 6 = 6\)
+- \(20 - 12 = 8\)
+- \(30 - 20 = 10\)
+- \(42 - 30 = 12\)
+
+The differences are: 4, 6, 8, 10, 12. These differences increase by 2 each time.
+
+To find the next difference, add 2 to the last difference:
+
+- \(12 + 2 = 14\)
+
+Now, add this difference to the last term in the sequence:
+
+- \(42 + 14 = 56\)
+
+Thus, the next number in the sequence is 56.
+
+To confirm the pattern, observe that the \(n\)-th term of the sequence can be expressed as:
+
+\[ a_n = n(n + 1) \]
+
+Let's verify this formula with the given terms:
+
+- For \(n = 1\), \(a_1 = 1(1 + 1) = 2\)
+- For \(n = 2\), \(a_2 = 2(2 + 1) = 6\)
+- For \(n = 3\), \(a_3 = 3(3 + 1) = 12\)
+- For \(n = 4\), \(a_4 = 4(4 + 1) = 20\)
+- For \(n = 5\), \(a_5 = 5(5 + 1) = 30\)
+- For \(n = 6\), \(a_6 = 6(6 + 1) = 42\)
+
+Now, calculate the next term using \(n = 7\):
+
+- For \(n = 7\), \(a_7 = 7(7 + 1) = 56\)
+
+This confirms that the next number in the sequence is indeed 56.",36,448,484,69.0723,6.49,100,77,10070.19,deepseek
+9,"A tank can be filled by Pipe A in 3 hours and drained by Pipe B in 4 hours. If both pipes are opened at the same time, how long will it take to fill an empty tank?","To solve this problem, we need to determine the net rate at which the tank is being filled when both pipes are open.
+
+1. **Determine the rate of Pipe A:**
+   - Pipe A can fill the tank in 3 hours. Therefore, the rate of Pipe A is \( \frac{1}{3} \) of the tank per hour.
+
+2. **Determine the rate of Pipe B:**
+   - Pipe B can drain the tank in 4 hours. Therefore, the rate of Pipe B is \( -\frac{1}{4} \) of the tank per hour (negative because it is draining the tank).
+
+3. **Calculate the net rate:**
+   - The net rate when both pipes are open is the sum of their rates:
+   \[
+   \text{Net rate} = \frac{1}{3} - \frac{1}{4}
+   \]
+
+4. **Find a common denominator and calculate:**
+   - The common denominator of 3 and 4 is 12.
+   - Convert the rates:
+     \[
+     \frac{1}{3} = \frac{4}{12}, \quad \frac{1}{4} = \frac{3}{12}
+     \]
+   - Subtract the rates:
+     \[
+     \text{Net rate} = \frac{4}{12} - \frac{3}{12} = \frac{1}{12}
+     \]
+
+5. **Determine the time to fill the tank:**
+   - The net rate of \(\frac{1}{12}\) means that \(\frac{1}{12}\) of the tank is filled per hour.
+   - Therefore, it will take 12 hours to fill the entire tank.
+
+Thus, if both pipes are opened at the same time, it will take 12 hours to fill the empty tank.",50,389,439,60.0769,6.48,100,77,10070.19,deepseek
+10,Write a Python function named `is_palindrome` that checks if a given string is a palindrome. Return a boolean.,"To determine if a given string is a palindrome, we need to check if the string reads the same forwards and backwards. A palindrome is a word, phrase, number, or other sequences of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+
+Here's a Python function named `is_palindrome` that checks if a given string is a palindrome and returns a boolean:
+
+```python
+def is_palindrome(s: str) -> bool:
+    # Convert the string to lowercase to make the check case-insensitive
+    s = s.lower()
+    
+    # Remove non-alphanumeric characters
+    filtered_chars = [char for char in s if char.isalnum()]
+    
+    # Join the characters back into a string
+    filtered_string = ''.join(filtered_chars)
+    
+    # Check if the filtered string is equal to its reverse
+    return filtered_string == filtered_string[::-1]
+
+# Example usage:
+print(is_palindrome(""A man, a plan, a canal, Panama""))  # Should return True
+print(is_palindrome(""racecar""))  # Should return True
+print(is_palindrome(""hello""))    # Should return False
+```
+
+### Explanation:
+
+1. **Lowercase Conversion**: Convert the entire string to lowercase to ensure the check is case-insensitive.
+
+2. **Filter Non-Alphanumeric Characters**: Use a list comprehension to filter out any characters that are not alphanumeric. This ensures that spaces, punctuation, and other symbols are ignored.
+
+3. **Join Characters**: Convert the list of filtered characters back into a string.
+
+4. **Palindrome Check**: Compare the filtered string with its reverse (`filtered_string[::-1]`). If they are the same, the string is a palindrome.
+
+This function handles common cases for palindromes, including ignoring spaces, punctuation, and case differences.",31,372,403,57.1161,6.51,100,78,10070.19,deepseek
+11,"Identify the syntax or runtime error in this JavaScript code snippet and explain how to fix it:
+const user = { name: 'Alice' };
+user = { name: 'Bob' };","The JavaScript code snippet you provided contains a logical error rather than a syntax or runtime error. The issue lies in the misunderstanding of how objects and variable assignments work in JavaScript.
+
+Here's the code snippet:
+
+```javascript
+const user = { name: 'Alice' };
+user = { name: 'Bob' };
+```
+
+### Explanation:
+
+1. **`const` Declaration**: 
+   - The `const` keyword is used to declare a variable that cannot be reassigned. Once a `const` variable is assigned a value, you cannot reassign it to a different value or object.
+
+2. **Object Assignment**:
+   - When you declare `const user = { name: 'Alice' };`, you are creating an object and assigning it to the `user` variable.
+   - The line `user = { name: 'Bob' };` attempts to reassign the `user` variable to a new object. However, since `user` is declared with `const`, this reassignment is not allowed and will result in a runtime error.
+
+### How to Fix:
+
+To fix this issue, you have a couple of options depending on your intended behavior:
+
+1. **Use `let` Instead of `const`**:
+   - If you intend to reassign the `user` variable to a different object, you should use `let` instead of `const`.
+
+   ```javascript
+   let user = { name: 'Alice' };
+   user = { name: 'Bob' };
+   ```
+
+2. **Modify the Existing Object**:
+   - If you want to keep the `user` variable constant but change the properties of the object it references, you can modify the object's properties directly.
+
+   ```javascript
+   const user = { name: 'Alice' };
+   user.name = 'Bob';
+   ```
+
+   In this case, `user` remains the same object, but its `name` property is updated.
+
+Choose the approach that best fits your use case. If you need to reassign the variable, use `let`. If you only need to update the object's properties, modify the properties directly.",45,433,478,66.9611,6.47,100,77,10070.19,deepseek
+12,What is the time complexity of looking up a key in a well-distributed Hash Map (or Python dictionary) in the average case versus the worst case?,"In a well-distributed hash map, such as Python's dictionary, the time complexity for looking up a key is as follows:
+
+- **Average Case:** The average time complexity for looking up a key is \(O(1)\). This is because a well-distributed hash function minimizes collisions, allowing direct access to the bucket where the key is stored.
+
+- **Worst Case:** The worst-case time complexity is \(O(n)\), where \(n\) is the number of keys in the hash map. This scenario occurs when all keys hash to the same bucket, resulting in a linked list (or similar structure) that must be traversed to find the key. However, Python's dictionary uses open addressing with quadratic probing, which helps mitigate this issue, but theoretically, the worst case remains \(O(n)\).
+
+In practice, due to Python's efficient handling of hash collisions and resizing, the average case performance is typically very close to \(O(1)\).",38,196,234,30.1863,6.49,100,77,10070.19,deepseek
+13,"Write a SQL query to find the second highest salary from an `employees` table containing columns `id` and `salary`. If there is no second highest salary, return NULL.","To find the second highest salary from the `employees` table, you can use a subquery to first find the maximum salary and then find the maximum salary that is less than this value. Here's how you can write the SQL query:
+
+```sql
+SELECT 
+    MAX(salary) AS second_highest_salary
+FROM 
+    employees
+WHERE 
+    salary < (SELECT MAX(salary) FROM employees);
+```
+
+This query works as follows:
+
+1. The subquery `(SELECT MAX(salary) FROM employees)` finds the highest salary in the table.
+2. The main query then selects the maximum salary that is less than this highest salary, which effectively gives you the second highest salary.
+3. If there is no second highest salary (i.e., all employees have the same salary), the result will be `NULL` because there won't be any salary less than the maximum salary.",43,181,224,27.8894,6.49,100,77,10070.19,deepseek
+14,"In Python, what is the difference between `__init__` and `__new__` tools?","In Python, `__new__` and `__init__` are two special methods that are involved in the object creation process, but they serve different purposes and are called at different stages.
+
+### `__new__`
+
+- **Purpose**: `__new__` is responsible for creating a new instance of a class. It is the first step in the object creation process and is called before `__init__`.
+- **Signature**: It takes the class as its first argument and any additional arguments that are passed to the class constructor.
+- **Return Value**: It must return an instance of the class. If it doesn't return an instance, the object creation process will not proceed.
+- **Usage**: `__new__` is a static method and is typically used in scenarios where you need to control the creation of a new instance, such as implementing singleton patterns or when dealing with immutable types (like `int`, `str`, `tuple`).
+
+Example:
+```python
+class MyClass:
+    def __new__(cls, *args, **kwargs):
+        # Custom logic for instance creation
+        instance = super(MyClass, cls).__new__(cls)
+        return instance
+
+    def __init__(self, value):
+        self.value = value
+```
+
+### `__init__`
+
+- **Purpose**: `__init__` is responsible for initializing the instance after it has been created. It is used to set up the initial state of the object.
+- **Signature**: It takes the instance as its first argument (commonly named `self`), followed by any additional arguments that are passed to the class constructor.
+- **Return Value**: It does not return anything. Its purpose is solely to initialize the instance.
+- **Usage**: `__init__` is where you typically set up instance variables and perform any setup that is necessary for the object to be in a usable state.
+
+Example:
+```python
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+```
+
+### Key Differences
+
+1. **Order of Call**: `__new__` is called before `__init__`. `__new__` creates the instance, and `__init__` initializes it.
+2. **Return Value**: `__new__` must return an instance of the class, while `__init__` does not return anything.
+3. **Method Type**: `__new__` is a static method, while `__init__` is an instance method.
+4. **Purpose**: `__new__` is for creating the instance, while `__init__` is for initializing the instance.
+
+In most cases, you only need to override `__init__` to initialize your objects. You would override `__new__` only when you need to customize the instance creation process.",28,573,601,89.0927,6.43,100,77,10070.19,deepseek
+15,What does the HTTP 403 status code represent?,"The HTTP 403 status code represents a ""Forbidden"" response. It indicates that the server understands the request but refuses to authorize it. This means that the client does not have the necessary permissions to access the requested resource. Unlike a 401 Unauthorized status, which indicates that authentication is required and has not been provided or has failed, a 403 status means that the client is authenticated but still not allowed access. This could be due to various reasons, such as insufficient permissions, access control lists, or other security policies in place.",17,107,124,16.6003,6.45,100,77,10070.19,deepseek
+16,Explain the concept of 'closures' in JavaScript with a brief architectural description.,"Closures in JavaScript are a powerful and fundamental concept that allow functions to access variables from an outer scope, even after the outer function has finished executing. This capability is rooted in JavaScript's lexical scoping and function scope rules.
+
+### Architectural Description
+
+1. **Lexical Scoping**: JavaScript uses lexical scoping, meaning that a function's scope is determined by its physical placement in the source code. Functions can access variables from their own scope, from the scope of their containing functions, and from the global scope.
+
+2. **Function Scope**: Each function creates a new scope. Variables declared within a function are not accessible from outside that function, unless they are returned or exposed in some way.
+
+3. **Closure Formation**: A closure is formed when a function is defined within another function, and the inner function references variables from the outer function. The inner function retains access to these variables even after the outer function has completed execution.
+
+4. **Execution Context**: When a function is executed, an execution context is created, which includes the function's scope chain. The scope chain is a list of all the variable objects that the function can access, starting from the innermost scope to the outermost.
+
+5. **Memory Retention**: Closures allow the inner function to ""remember"" the environment in which it was created. This means that variables from the outer function are retained in memory as long as the closure exists, even if the outer function has finished executing.
+
+### Example
+
+```javascript
+function outerFunction() {
+    let outerVariable = 'I am outside!';
+
+    function innerFunction() {
+        console.log(outerVariable);
+    }
+
+    return innerFunction;
+}
+
+const myClosure = outerFunction();
+myClosure(); // Outputs: 'I am outside!'
+```
+
+### Explanation
+
+- **outerFunction**: Defines a variable `outerVariable` and an `innerFunction` that accesses `outerVariable`.
+- **innerFunction**: Forms a closure by capturing `outerVariable` from its lexical scope.
+- **Return**: `outerFunction` returns `innerFunction`, allowing it to be called later.
+- **myClosure**: Holds the closure, maintaining access to `outerVariable` even after `outerFunction` has executed.
+
+### Use Cases
+
+- **Data Encapsulation**: Closures can be used to create private variables and functions, encapsulating data within a module or function.
+- **Event Handlers**: Often used in event handling to maintain state across multiple events.
+- **Functional Programming**: Useful in functional programming patterns, such as currying and partial application.
+
+Closures are a key feature of JavaScript, enabling powerful patterns and techniques that leverage the language's dynamic and flexible nature.",24,540,564,83.8486,6.44,100,77,10070.19,deepseek
+17,"In Git, what is the functional difference between `git fetch` and `git pull`?","In Git, `git fetch` and `git pull` are both used to update your local repository with changes from a remote repository, but they serve different purposes and operate in distinct ways:
+
+1. **`git fetch`:**
+   - **Purpose:** `git fetch` is used to retrieve updates from a remote repository without merging them into your current branch. It downloads new data from the remote repository, such as new branches and commits, but does not modify your working directory or current branch.
+   - **Functionality:** When you run `git fetch`, Git contacts the remote repository, downloads any new commits, branches, and tags, and updates the remote-tracking branches in your local repository. This means that your local repository will have the latest information from the remote, but your current branch will remain unchanged.
+   - **Use Case:** Use `git fetch` when you want to see what others have done but are not ready to integrate those changes into your work yet. It allows you to review changes before deciding to merge them.
+
+2. **`git pull`:**
+   - **Purpose:** `git pull` is a combination of `git fetch` followed by `git merge` (or `git rebase`, depending on your configuration). It fetches updates from the remote repository and immediately attempts to merge them into your current branch.
+   - **Functionality:** When you run `git pull`, Git first performs a `git fetch` to retrieve the latest changes from the remote repository. Then, it merges those changes into your current branch. If there are conflicts during the merge, Git will pause and prompt you to resolve them.
+   - **Use Case:** Use `git pull` when you want to update your current branch with the latest changes from the remote repository and are ready to integrate those changes immediately.
+
+In summary, `git fetch` is a safer option if you want to review changes before integrating them, while `git pull` is a quicker way to update your branch with the latest changes from the remote repository.",26,409,435,63.0042,6.49,100,77,10070.19,deepseek
+18,What HTML tags are used to create a numbered itemized list?,"To create a numbered itemized list in HTML, you use the `<ol>` tag, which stands for ""ordered list,"" along with `<li>` tags for each list item. Here's an example:
+
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+
+In this structure, the `<ol>` tag defines the ordered list, and each `<li>` (list item) tag represents an individual item within that list. By default, the list is numbered with Arabic numerals (1, 2, 3, etc.). You can also customize the numbering style using the `type` attribute on the `<ol>` tag, such as `type=""A""` for uppercase letters, `type=""a""` for lowercase letters, or `type=""I""` for uppercase Roman numerals.",20,186,206,28.5122,6.52,100,77,10070.19,deepseek
+19,Write a regular expression (Regex) that validates a standard IPv4 address configuration format.,"To validate a standard IPv4 address using a regular expression, you need to ensure that the address consists of four octets, each ranging from 0 to 255, separated by periods. Here's a regular expression that accomplishes this:
+
+```regex
+^((25[0-5])|(2[0-4][0-9])|([01]?[0-9][0-9]?))\.((25[0-5])|(2[0-4][0-9])|([01]?[0-9][0-9]?))\.((25[0-5])|(2[0-4][0-9])|([01]?[0-9][0-9]?))\.((25[0-5])|(2[0-4][0-9])|([01]?[0-9][0-9]?))$
+```
+
+### Explanation:
+
+- `^` and `$` are anchors that ensure the entire string matches the pattern.
+- Each octet is matched by one of the following patterns:
+  - `25[0-5]`: Matches numbers from 250 to 255.
+  - `2[0-4][0-9]`: Matches numbers from 200 to 249.
+  - `[01]?[0-9][0-9]?`: Matches numbers from 0 to 199. The `?` makes the preceding digit optional, allowing for single-digit and double-digit numbers.
+- `\.` is used to match the period between octets.
+- The pattern is repeated four times to match all four octets.
+
+This regex ensures that each octet is within the valid range and that the format is correct for an IPv4 address.",24,357,381,54.7834,6.52,100,77,10070.19,deepseek
+20,Write a short paragraph about traveling to Mars. Constraint: Do not use the letter 'e' anywhere in your response.,"Visiting Mars is a bold and thrilling pursuit. Astronauts must train rigorously, adapting to harsh conditions and long isolation. A trip lasts months, with a spacecraft carrying vital supplies and tools for survival. Upon arrival, a vast, crimson world unfolds, full of unknowns and grand vistas. This mission could unlock cosmic truths and spark human innovation, pushing our limits and inspiring a vision of a future among stars. Such a journey is a bold step for humanity, marking a pivotal point in our cosmic odyssey.",31,105,136,16.4117,6.4,100,77,10070.19,deepseek
+21,Give me a list of three popular fruit varieties. Format your entire response strictly as a valid CSV string with headers 'Fruit' and 'Color'. Do not add conversational filler.,"```
+Fruit,Color
+Apple,Red
+Banana,Yellow
+Grape,Purple
+```",44,23,67,4.3356,5.3,100,77,10070.19,deepseek
+22,Draft a professional sign-off email for a project delivery. Your final output must contain exactly 45 words.,"Subject: Project Delivery Completion
+
+Dear [Recipient's Name],
+
+I am pleased to inform you that the project has been successfully delivered. All deliverables have been finalized and are ready for your review. Please find the attached documents for your reference. Should you have any questions or need further assistance, feel free to reach out.
+
+Thank you for your collaboration.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Contact Information]  
+
+---
+
+*Note: Please replace placeholders with actual details.*",28,101,129,15.829,6.38,100,77,10070.19,deepseek
+23,Answer the following question: 'Why is the sky blue?' Answer it in exactly three distinct sentences. The first sentence must end with a question mark. The second sentence must start with the word 'Because'. The third sentence must mention an optical phenomena.,"Why is the sky blue? Because the Earth's atmosphere scatters sunlight in all directions, and blue light is scattered more than other colors due to its shorter wavelength. This scattering, known as Rayleigh scattering, is responsible for the blue appearance of the sky during the day.",57,56,113,9.2949,6.02,100,77,10070.19,deepseek
+24,"Provide a motivational quote, then translate it to French, and finally translate it to Spanish. Separate each section with a line of exactly 5 hyphens (-----).","**Motivational Quote:**  
+""Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.""
+
+-----  
+**Translation to French:**  
+""Crois en toi et en tout ce que tu es. Sache qu'il y a quelque chose en toi qui est plus grand que n'importe quel obstacle.""
+
+-----  
+**Translation to Spanish:**  
+""Cree en ti y en todo lo que eres. Sé que hay algo dentro de ti que es más grande que cualquier obstáculo.""",41,112,153,17.558,6.38,100,77,10070.19,deepseek
+25,"Generate 3 random passwords. Each password must be exactly 8 characters long, contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special symbol. Format them as a numbered list.","Here are three randomly generated passwords that meet your criteria:
+
+1. G7#t4LmQ
+2. R2!f8zXp
+3. J6@k3WnD
+
+Each password is 8 characters long and includes at least one uppercase letter, one lowercase letter, one number, and one special symbol.",53,72,125,11.634,6.19,100,77,10070.19,deepseek
+26,"Explain global warming using an analogy of a greenhouse. Rule: Use uppercase letters for every single vowel (A, E, I, O, U) in your text.","Imagine the Earth is like a GIANT greenhouse. In a greenhouse, the glass walls and roof allow sunlight to enter, warming the plants and air inside. However, the glass also traps some of the heat, preventing it from escaping back into the atmosphere. This trapped heat helps maintain a warm environment inside the greenhouse, which is ideal for growing plants.
+
+Similarly, the Earth's atmosphere acts like the glass of a greenhouse. Sunlight enters the Earth's atmosphere and warms the surface. Normally, some of this heat would escape back into space. However, certain gases in the atmosphere, known as greenhouse gases (like carbon dioxIdE, methane, and nitrous oxIdE), trap some of this heat, preventing it from escaping. This process is called the greenhouse effect.
+
+In a balanced system, the greenhouse effect is natural and necessary for life, as it keeps the Earth warm enough to support life. However, human activities, such as burning fossil fuels, deforestation, and industrial processes, have increased the concentration of these greenhouse gases in the atmosphere. This enhanced greenhouse effect leads to more heat being trapped, causing the Earth's average temperature to rise, a phenomenon known as global warming.
+
+As a result, global warming leads to various environmental impacts, such as melting ice caps, rising sea levels, more extreme weather events, and disruptions to ecosystems. Just like if you added more glass or made the glass thicker in a greenhouse, increasing the concentration of greenhouse gases amplifies the warming effect, leading to the current climate change challenges we face.",42,311,353,47.9652,6.48,100,78,10070.19,deepseek
+27,"Provide the capitals of Japan, France, and Canada. Your output should only contain the names of the cities separated by semicolons, with absolutely no punctuation or text at the end.",Tokyo;Paris;Ottawa,44,9,53,2.2759,3.95,100,77,10070.19,deepseek
+28,Write a haiku about artificial intelligence. (A haiku must follow a 5-7-5 syllable structure).,"Silent circuits hum,  
+Minds of metal learn and grow,  
+Future dreams take form.",32,21,53,3.9974,5.25,100,77,10070.19,deepseek
+29,Summarize the importance of bees to the ecosystem. Your summary must be structured as a single JSON object containing two keys: 'ecological_impact' and 'agricultural_impact'.,"```json
+{
+  ""ecological_impact"": ""Bees play a crucial role in maintaining biodiversity and ecosystem health. As pollinators, they facilitate the reproduction of a wide variety of plants, including many wildflowers and trees. This pollination process supports the growth of plants that provide habitat and food for numerous other species, thus maintaining the balance of ecosystems. Bees contribute to the genetic diversity of plants, which enhances resilience to environmental changes and diseases. Their activities help sustain the structure and function of ecosystems, supporting the survival of many animal species, including birds and mammals that rely on plants for food and shelter."",
+  
+  ""agricultural_impact"": ""Bees are vital to agriculture, as they are responsible for pollinating a significant portion of the crops humans rely on for food. They enhance the yield and quality of fruits, vegetables, nuts, and seeds, directly impacting global food security. Crops such as almonds, apples, blueberries, and cucumbers depend heavily on bee pollination. The economic value of bee pollination is immense, contributing billions of dollars to the agricultural industry annually. Without bees, many crops would suffer reduced yields, leading to higher food prices and potential shortages, which would have far-reaching consequences for human nutrition and economies worldwide.""
+}
+```",46,260,306,40.048,6.49,100,77,10070.19,deepseek

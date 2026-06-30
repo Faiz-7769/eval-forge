@@ -1,0 +1,574 @@
+question_id,question,answer,prompt_tokens,output_tokens,total_tokens,latency_sec,tokens_per_sec,gpu_usage_pct,gpu_temp_c,gpu_mem_used_mb,model
+0,"A train leaves Station A traveling at 60 mph. Two hours later, a second train leaves Station A on the same track traveling at 90 mph. How many hours will it take the second train to catch up to the first train?","To find out how long it will take for the second train to catch up to the first train, we need to calculate the distance the first train has traveled by the time the second train starts, and then find out how long it will take for the second train to cover that distance.
+
+The first train travels at 60 mph for 2 hours before the second train starts. 
+
+Distance = Speed x Time
+Distance = 60 mph x 2 hours
+Distance = 120 miles
+
+The second train travels at 90 mph and needs to cover the 120 miles the first train has already traveled. 
+
+Time = Distance / Speed
+Time = 120 miles / 90 mph
+Time = 1.33 hours (approximately)
+
+So, it will take the second train approximately 1 hour and 20 minutes to catch up to the first train.",83,173,256,0.2338,739.8,,,,groq/llama-3.1-8b-instant
+1,"If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?","To find out how many seconds it takes for the clock to strike 12 times, we need to first find out the time interval between each strike. 
+
+Since the clock strikes 6 times in 5 seconds, the time interval between each strike is 5 seconds / 6 strikes = 0.8333 seconds per strike (approximately).
+
+Now, to find out how many seconds it takes for the clock to strike 12 times, we multiply the time interval between each strike by the number of strikes:
+
+0.8333 seconds per strike * 12 strikes = 10 seconds.
+
+So, it will take approximately 10 seconds for the clock to strike 12 times.",59,137,196,0.1825,750.7,,,,groq/llama-3.1-8b-instant
+2,"All prompt engineers are tech enthusiasts. Some tech enthusiasts are gamers. No gamers are professional writers. Based on these rules, is it definitely true that some prompt engineers are not professional writers?","To determine if it's definitely true that some prompt engineers are not professional writers, we need to analyze the given rules.
+
+1. All prompt engineers are tech enthusiasts.
+2. Some tech enthusiasts are gamers.
+3. No gamers are professional writers.
+
+From rule 1, we know that all prompt engineers are tech enthusiasts. 
+
+From rule 2, we know that some tech enthusiasts are gamers, but this does not directly relate to prompt engineers.
+
+From rule 3, we know that no gamers are professional writers, but this does not directly relate to prompt engineers.
+
+Now, let's try to connect the given rules to the conclusion we want to draw. We want to know if some prompt engineers are not professional writers.
+
+If we assume that all tech enthusiasts are either gamers or non-gamers, we can say that all prompt engineers are either gamers or non-gamers (since all prompt engineers are tech enthusiasts).
+
+From rule 3, we know that no gamers are professional writers. This means that all prompt engineers who are gamers are not professional writers.
+
+However, we cannot conclude that all prompt engineers are not professional writers, because we don't know if there are any prompt engineers who are non-gamers. 
+
+But we can say that some prompt engineers are not professional writers, because we know that some prompt engineers are gamers (rule 2), and all gamers are not professional writers (rule 3). 
+
+Therefore, it is indeed true that some prompt engineers are not professional writers.",72,301,373,0.5798,519.14,,,,groq/llama-3.1-8b-instant
+3,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?,"Let's denote the cost of the ball as 'x'. Since the bat costs $1.00 more than the ball, the cost of the bat is 'x + 1.00'.
+
+The total cost of the bat and the ball is $1.10, so we can set up the equation:
+
+x + (x + 1.00) = 1.10
+
+Combine like terms:
+
+2x + 1.00 = 1.10
+
+Subtract 1.00 from both sides:
+
+2x = 0.10
+
+Divide both sides by 2:
+
+x = 0.05
+
+So, the ball costs $0.05.",67,139,206,0.2299,604.66,,,,groq/llama-3.1-8b-instant
+4,"If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?","If 5 machines take 5 minutes to make 5 widgets, it means that each machine takes 5 minutes to make 1 widget. 
+
+If we have 100 machines, and each machine takes 5 minutes to make 1 widget, it would still take each machine 5 minutes to make 1 widget. 
+
+So, 100 machines would take 5 minutes to make 100 widgets.",63,83,146,0.0943,879.85,,,,groq/llama-3.1-8b-instant
+5,"You are facing two doors. One leads to freedom, the other to certain doom. One guard stands at each door; one always lies, and the other always tells the truth. You do not know which is which. You can ask exactly one guard one question. What do you ask to find the door to freedom?","To solve this classic puzzle, you need to ask a question that will give you the information you need to make a decision, regardless of which guard you ask.
+
+Here's the question: ""If I were to ask your fellow guard which door leads to freedom, what would they say?""
+
+Think about it for a moment. If you ask the truth-telling guard, they will tell you what the lying guard would say, which would be the opposite of the correct answer (i.e., they would point to the door that leads to doom). If you ask the lying guard, they will lie about what the truth-telling guard would say, which would also be the opposite of the correct answer.
+
+In either case, you can safely assume the opposite of what the guard says, and that will lead you to the door of freedom.",99,167,266,0.2259,739.12,,,,groq/llama-3.1-8b-instant
+6,"A box contains 3 red apples and 7 green apples. If you select two apples at random without replacement, what is the probability that both are red?","To find the probability of selecting two red apples without replacement, we need to calculate the probability of the first apple being red and the probability of the second apple being red given that the first one is red.
+
+Initially, there are 3 red apples and 7 green apples, making a total of 10 apples.
+
+Probability of selecting a red apple first: 
+Number of red apples = 3
+Total number of apples = 10
+Probability = 3/10
+
+Now, there are 2 red apples and 7 green apples left, making a total of 9 apples.
+
+Probability of selecting a red apple second, given that the first one is red:
+Number of red apples = 2
+Total number of apples = 9
+Probability = 2/9
+
+To find the probability that both apples are red, we multiply the probabilities of the first and second events:
+Probability = (3/10) * (2/9)
+Probability = 6/90
+Probability = 1/15
+
+So, the probability of selecting two red apples without replacement is 1/15 or approximately 0.0667.",67,230,297,0.2574,893.69,,,,groq/llama-3.1-8b-instant
+7,Solve for x: 3x + 7 = 22.,"To solve for x, we need to isolate x on one side of the equation. 
+
+First, subtract 7 from both sides of the equation:
+
+3x + 7 - 7 = 22 - 7
+3x = 15
+
+Next, divide both sides of the equation by 3:
+
+(3x) / 3 = 15 / 3
+x = 5
+
+So, the value of x is 5.",50,93,143,0.1305,712.83,,,,groq/llama-3.1-8b-instant
+8,"What is the next number in the sequence: 2, 6, 12, 20, 30, 42, ...?","To determine the next number in the sequence, we need to identify the pattern. 
+
+Looking at the differences between consecutive numbers:
+- 6 - 2 = 4
+- 12 - 6 = 6
+- 20 - 12 = 8
+- 30 - 20 = 10
+- 42 - 30 = 12
+
+We can see that the differences are increasing by 2 each time (4, 6, 8, 10, 12). 
+
+If this pattern continues, the next difference should be 14. 
+
+So, to find the next number in the sequence, we add 14 to 42:
+42 + 14 = 56
+
+Therefore, the next number in the sequence is 56.",64,158,222,0.189,836.05,,,,groq/llama-3.1-8b-instant
+9,"A tank can be filled by Pipe A in 3 hours and drained by Pipe B in 4 hours. If both pipes are opened at the same time, how long will it take to fill an empty tank?","To solve this problem, we need to find the net rate at which the tank is being filled when both pipes are open.
+
+Let's analyze the situation:
+
+- Pipe A fills the tank in 3 hours, so its filling rate is 1/3 of the tank per hour.
+- Pipe B drains the tank in 4 hours, so its draining rate is 1/4 of the tank per hour.
+
+When both pipes are open, the net filling rate is the difference between the filling rate and the draining rate.
+
+Net filling rate = Filling rate - Draining rate
+= (1/3) - (1/4)
+= (4/12) - (3/12)
+= 1/12 of the tank per hour.
+
+Since the net filling rate is 1/12 of the tank per hour, it will take 12 hours to fill the tank when both pipes are open.
+
+Therefore, it will take 12 hours to fill an empty tank.",78,199,277,0.2229,892.87,,,,groq/llama-3.1-8b-instant
+10,Write a Python function named `is_palindrome` that checks if a given string is a palindrome. Return a boolean.,"## is_palindrome Function
+### Checks if a given string is a palindrome
+
+```python
+def is_palindrome(s: str) -> bool:
+    """"""
+    Checks if a given string is a palindrome.
+
+    Args:
+        s (str): The input string.
+
+    Returns:
+        bool: True if the string is a palindrome, False otherwise.
+    """"""
+    s = ''.join(c for c in s if c.isalnum()).lower()  # Remove non-alphanumeric characters and convert to lowercase
+    return s == s[::-1]  # Compare the string with its reverse
+```
+
+### Example Use Cases
+
+```python
+print(is_palindrome(""A man, a plan, a canal: Panama""))  # True
+print(is_palindrome(""Not a palindrome""))  # False
+print(is_palindrome(""Was it a car or a cat I saw""))  # True
+```
+
+This function works by first removing any non-alphanumeric characters from the input string and converting it to lowercase. It then compares the resulting string with its reverse. If they are the same, the function returns True, indicating that the original string is a palindrome. Otherwise, it returns False.",59,241,300,0.2642,912.05,,,,groq/llama-3.1-8b-instant
+11,"Identify the syntax or runtime error in this JavaScript code snippet and explain how to fix it:
+const user = { name: 'Alice' };
+user = { name: 'Bob' };","**Error Identification and Explanation**
+
+The syntax error in the given JavaScript code snippet is that it is attempting to reassign the value of a `const` variable, which is not allowed in JavaScript.
+
+**Code Snippet**
+
+```javascript
+const user = { name: 'Alice' };
+user = { name: 'Bob' };
+```
+
+**Error Message**
+
+When you run this code in a JavaScript environment, you will get the following error message:
+
+```
+TypeError: Assignment to constant variable.
+```
+
+**Fixing the Error**
+
+To fix this error, you can use the `let` keyword instead of `const` to declare the `user` variable. `let` allows you to reassign the value of the variable.
+
+**Corrected Code Snippet**
+
+```javascript
+let user = { name: 'Alice' };
+user = { name: 'Bob' };
+```
+
+Alternatively, if you want to keep the `const` keyword, you can use the `Object.assign()` method to update the existing object instead of reassigning it.
+
+**Corrected Code Snippet (Using Object.assign())**
+
+```javascript
+const user = { name: 'Alice' };
+user = Object.assign(user, { name: 'Bob' });
+```
+
+However, using `Object.assign()` can be confusing and may lead to unexpected behavior if you're not careful. It's generally recommended to use `let` or `var` when you need to reassign a variable.
+
+**Best Practice**
+
+If you're using a modern JavaScript environment that supports the `const` keyword, it's generally a good practice to use it to declare variables that should not be reassigned. However, if you need to reassign a variable, use `let` instead.
+
+```javascript
+let user = { name: 'Alice' };
+user = { name: 'Bob' }; // Reassignment is allowed
+
+const readOnlyUser = { name: 'Alice' };
+// readOnlyUser = { name: 'Bob' }; // Error: Assignment to constant variable.
+```",73,412,485,0.7128,578.01,,,,groq/llama-3.1-8b-instant
+12,What is the time complexity of looking up a key in a well-distributed Hash Map (or Python dictionary) in the average case versus the worst case?,"In a well-distributed Hash Map (or Python dictionary), the average case time complexity for looking up a key is O(1), also known as constant time complexity. This is because the hash function is designed to distribute the keys evenly across the buckets, reducing the likelihood of collisions.
+
+However, in the worst case, the time complexity is O(n), where n is the number of keys in the hash map. This occurs when the hash function produces a large number of collisions, causing the keys to be concentrated in a single bucket. In this scenario, looking up a key may require searching through all n keys, resulting in linear time complexity.
+
+It's worth noting that the worst-case scenario is extremely rare in a well-designed hash map, and it's often considered to be a pathological case. In practice, the average case time complexity of O(1) is a much more accurate representation of the performance of a well-distributed hash map.
+
+Here's a simple example in Python to illustrate this:
+
+```python
+import time
+
+# Create a dictionary with 1 million keys
+keys = list(range(1000000))
+d = {key: None for key in keys}
+
+# Function to measure lookup time
+def measure_lookup_time(d, key):
+    start_time = time.time()
+    for _ in range(1000):
+        d[key]
+    end_time = time.time()
+    return (end_time - start_time) / 1000  # Return time in seconds
+
+# Measure lookup time for a well-distributed hash map
+key = 123456
+print(f""Lookup time for a well-distributed hash map: {measure_lookup_time(d, key)} seconds"")
+
+# Measure lookup time for a worst-case scenario (all keys in one bucket)
+d = {key: None for key in keys}
+d = {i: None for i in keys}  # Create a new dictionary with all keys in one bucket
+print(f""Lookup time for a worst-case scenario: {measure_lookup_time(d, key)} seconds"")
+```
+
+In this example, the lookup time for a well-distributed hash map is extremely fast, while the lookup time for a worst-case scenario is significantly slower.",66,445,511,0.6344,701.46,,,,groq/llama-3.1-8b-instant
+13,"Write a SQL query to find the second highest salary from an `employees` table containing columns `id` and `salary`. If there is no second highest salary, return NULL.","**SQL Query to Find Second Highest Salary**
+
+```sql
+SELECT 
+    MAX(CASE WHEN DENSE_RANK() OVER (ORDER BY salary DESC) = 2 THEN salary END) AS second_highest_salary
+FROM 
+    employees;
+```
+
+This query uses the `DENSE_RANK()` window function to assign a unique rank to each distinct salary in descending order. The `CASE` statement then selects the salary with rank 2, which is the second highest salary. If there is no second highest salary, the `MAX` function will return `NULL`.
+
+**Explanation**
+
+1. `DENSE_RANK()` assigns a unique rank to each distinct salary in descending order. If two salaries are equal, they will have the same rank.
+2. The `CASE` statement selects the salary with rank 2, which is the second highest salary.
+3. The `MAX` function returns the maximum value of the selected salary, which is the second highest salary.
+4. If there is no second highest salary, the `MAX` function will return `NULL`.
+
+**Example Use Case**
+
+Suppose the `employees` table has the following data:
+
+| id | salary |
+| --- | --- |
+| 1  | 100000 |
+| 2  | 90000  |
+| 3  | 90000  |
+| 4  | 80000  |
+
+The query will return `90000` as the second highest salary.
+
+If the table has the following data:
+
+| id | salary |
+| --- | --- |
+| 1  | 100000 |
+| 2  | 90000  |
+| 3  | 80000  |
+
+The query will return `NULL` as there is no second highest salary.",71,356,427,0.4083,871.99,,,,groq/llama-3.1-8b-instant
+14,"In Python, what is the difference between `__init__` and `__new__` tools?","**`__init__` vs `__new__`: Understanding the Difference**
+
+In Python, `__init__` and `__new__` are two special methods that are often confused with each other. While they are both used for object initialization, they serve different purposes and are called at different times.
+
+### `__init__`
+
+`__init__` is a special method in Python classes that is automatically called when an object is instantiated. It is used to initialize the attributes of an object. The `__init__` method is typically used to set the initial state of an object, such as assigning values to instance variables.
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person = Person(""John"", 30)
+print(person.name)  # Output: John
+print(person.age)   # Output: 30
+```
+
+In this example, when we create a `Person` object, the `__init__` method is called automatically, and the `name` and `age` attributes are initialized with the provided values.
+
+### `__new__`
+
+`__new__` is another special method in Python classes that is used to create a new instance of a class. It is called before the `__init__` method and is responsible for allocating memory for the object. The `__new__` method is typically used to customize the creation of objects, such as when you need to create a singleton or a class that requires some setup before the object is created.
+
+```python
+class Singleton:
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+
+singleton1 = Singleton()
+singleton2 = Singleton()
+
+print(singleton1 is singleton2)  # Output: True
+```
+
+In this example, the `__new__` method is used to create a singleton class, where only one instance of the class is allowed. When we create multiple objects, the `__new__` method ensures that they are the same instance.
+
+### Key Differences
+
+Here are the key differences between `__init__` and `__new__`:
+
+*   **Purpose**: `__init__` is used to initialize the attributes of an object, while `__new__` is used to create a new instance of a class.
+*   **Order**: `__new__` is called before `__init__`.
+*   **Return Value**: `__new__` returns the new instance, while `__init__` does not return anything.
+
+In summary, `__init__` is used for object initialization, while `__new__` is used for object creation. Both methods are important in Python class design, and understanding their differences is crucial for writing effective and efficient code.",56,597,653,0.7046,847.32,,,,groq/llama-3.1-8b-instant
+15,What does the HTTP 403 status code represent?,"The HTTP 403 status code represents a ""Forbidden"" response. This means that the server understood the request but refuses to authorize it. It's often used when the client doesn't have the necessary permissions or credentials to access the requested resource.",45,49,94,0.1285,381.3,,,,groq/llama-3.1-8b-instant
+16,Explain the concept of 'closures' in JavaScript with a brief architectural description.,"**Closures in JavaScript**
+==========================
+
+A closure is a fundamental concept in JavaScript that allows a function to have access to its outer scope even when the outer function has returned. This is achieved by creating a new scope that ""closes over"" the outer scope, allowing the inner function to access variables and functions from the outer scope.
+
+**Architectural Description**
+-----------------------------
+
+Imagine a nested function call stack, where each function has access to its own scope and the scopes of its parent functions. When a function is called, a new scope is created, and any variables or functions defined within that scope are added to the scope chain.
+
+When a function returns, its scope is not immediately garbage collected. Instead, the returned function (now called a closure) continues to have access to the scope in which it was created, even after the outer function has returned.
+
+Here's a simplified example to illustrate this:
+
+```javascript
+function outer() {
+  let x = 10;
+
+  function inner() {
+    console.log(x); // access to outer scope
+  }
+
+  return inner;
+}
+
+const closure = outer();
+closure(); // outputs 10
+```
+
+In this example, the `inner` function is a closure because it has access to the scope of the `outer` function, even after `outer` has returned.
+
+**Key Characteristics of Closures**
+
+1. **Access to outer scope**: Closures have access to the scope in which they were created, including variables and functions.
+2. **Scope chain**: Closures maintain a reference to the scope chain, allowing them to access variables and functions from outer scopes.
+3. **Late binding**: Closures are bound to their outer scope at the time of creation, not at the time of execution.
+
+**Use Cases for Closures**
+---------------------------
+
+1. **Private variables**: Closures can be used to create private variables that are not accessible from outside the closure.
+2. **Event handling**: Closures are often used in event handling to capture the context of the event (e.g., `this` keyword).
+3. **Higher-order functions**: Closures are used extensively in higher-order functions, such as `map`, `filter`, and `reduce`, to create new functions that have access to the original function's scope.
+
+In summary, closures are a powerful feature in JavaScript that allow functions to have access to their outer scope even after the outer function has returned. This enables a wide range of use cases, from private variables to event handling and higher-order functions.",52,509,561,0.9481,536.84,,,,groq/llama-3.1-8b-instant
+17,"In Git, what is the functional difference between `git fetch` and `git pull`?","**Git Fetch vs Git Pull: Understanding the Difference**
+
+In Git, `git fetch` and `git pull` are two commands that are often used together, but they serve different purposes.
+
+**Git Fetch**
+
+`git fetch` is used to retrieve the latest data from a remote repository without merging it into your local branch. It updates your local repository's knowledge of the remote repository's branches, but it doesn't modify your local branch.
+
+When you run `git fetch`, Git:
+
+1. Contacts the remote repository and retrieves the latest data.
+2. Updates your local repository's knowledge of the remote repository's branches.
+3. Leaves your local branch unchanged.
+
+**Git Pull**
+
+`git pull`, on the other hand, is a combination of `git fetch` and `git merge`. It retrieves the latest data from a remote repository and merges it into your local branch.
+
+When you run `git pull`, Git:
+
+1. Contacts the remote repository and retrieves the latest data (just like `git fetch`).
+2. Merges the retrieved data into your local branch.
+
+**Key differences**
+
+Here are the key differences between `git fetch` and `git pull`:
+
+* **No merge**: `git fetch` doesn't merge the retrieved data into your local branch, whereas `git pull` does.
+* **No local branch modification**: `git fetch` leaves your local branch unchanged, whereas `git pull` modifies your local branch by merging the retrieved data.
+* **No commit**: `git fetch` doesn't create a new commit, whereas `git pull` creates a new commit if there are conflicts.
+
+**When to use each**
+
+Here are some guidelines on when to use each command:
+
+* Use `git fetch` when:
+	+ You want to update your local repository's knowledge of the remote repository's branches without modifying your local branch.
+	+ You want to inspect the changes without merging them into your local branch.
+* Use `git pull` when:
+	+ You want to update your local branch with the latest changes from the remote repository.
+	+ You want to merge the changes into your local branch and create a new commit.
+
+In summary, `git fetch` is used to retrieve data from a remote repository without merging it into your local branch, while `git pull` is a combination of `git fetch` and `git merge` that retrieves data and merges it into your local branch.",54,487,541,0.6237,780.87,,,,groq/llama-3.1-8b-instant
+18,What HTML tags are used to create a numbered itemized list?,"To create a numbered itemized list in HTML, you can use the following tags:
+
+1. `<ol>`: This tag is used to define an ordered list. It will display the list items with numbers.
+2. `<li>`: This tag is used to define a list item. It should be placed inside the `<ol>` tag.
+
+Here's an example:
+
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+This will display a numbered list with the items ""Item 1"", ""Item 2"", and ""Item 3"".
+
+Alternatively, you can use the `<ul>` tag for an unordered list (which is not numbered) and add a CSS style to display the list items with numbers. However, using the `<ol>` tag is the standard way to create a numbered list in HTML.",48,194,242,0.2413,803.85,,,,groq/llama-3.1-8b-instant
+19,Write a regular expression (Regex) that validates a standard IPv4 address configuration format.,"**IPv4 Address Validation Regex**
+=====================================
+
+The following regular expression (Regex) validates a standard IPv4 address configuration format. It checks for the correct number of octets, the range of each octet, and that the octets are separated by dots.
+
+```regex
+^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+```
+
+**Explanation**
+---------------
+
+*   `^` asserts the start of the string.
+*   `(` and `)` are used to group the pattern.
+*   `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)` matches each octet:
+    *   `25[0-5]` matches numbers between 250 and 255.
+    *   `2[0-4][0-9]` matches numbers between 200 and 249.
+    *   `[01]?[0-9][0-9]?` matches numbers between 0 and 199.
+*   `\.` matches a dot (escaped with a backslash because `.` has a special meaning in Regex).
+*   `{3}` specifies that the preceding pattern should be repeated exactly 3 times.
+*   `$` asserts the end of the string.
+
+**Example Use Cases**
+----------------------
+
+```python
+import re
+
+# Test the regex with valid IPv4 addresses
+valid_addresses = [""192.168.0.1"", ""10.0.0.1"", ""172.16.254.1""]
+for address in valid_addresses:
+    if re.match(r""^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"", address):
+        print(f""{address} is a valid IPv4 address."")
+    else:
+        print(f""{address} is not a valid IPv4 address."")
+
+# Test the regex with invalid IPv4 addresses
+invalid_addresses = [""192.168.0"", ""10.0.0.256"", ""172.16.254.256"", ""256.1.1.1""]
+for address in invalid_addresses:
+    if re.match(r""^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"", address):
+        print(f""{address} is a valid IPv4 address."")
+    else:
+        print(f""{address} is not a valid IPv4 address."")
+```
+
+This code will output:
+
+```
+192.168.0.1 is a valid IPv4 address.
+10.0.0.1 is a valid IPv4 address.
+172.16.254.1 is a valid IPv4 address.
+192.168.0 is not a valid IPv4 address.
+10.0.0.256 is not a valid IPv4 address.
+172.16.254.256 is not a valid IPv4 address.
+256.1.1.1 is not a valid IPv4 address.
+```",52,733,785,0.8726,840.02,,,,groq/llama-3.1-8b-instant
+20,Write a short paragraph about traveling to Mars. Constraint: Do not use the letter 'e' anywhere in your response.,"Trvling to Mars is a challngng task. It tak s a long tim to rach the planet. A spcd ship must travl thrugh spacd at high spds to rach Mars in a rasonabl tim. Th spcd ship must als b equipd with sufficnt suplys of food, wtr, and oxygn to sustn th trvlers for th duration of th trip. Th trvlers must als b prpard for th challngng conditins on Mars, includng th harsh wthr and low oxygn lvls.",59,122,181,0.2883,423.18,,,,groq/llama-3.1-8b-instant
+21,Give me a list of three popular fruit varieties. Format your entire response strictly as a valid CSV string with headers 'Fruit' and 'Color'. Do not add conversational filler.,"""Apple,Red"",""Banana,Yellow"",""Strawberry,Red""",72,17,89,0.0387,439.51,,,,groq/llama-3.1-8b-instant
+22,Draft a professional sign-off email for a project delivery. Your final output must contain exactly 45 words.,"Subject: Final Project Delivery and Completion
+
+Dear [Recipient's Name],
+
+I am pleased to inform you that the project has been successfully delivered, meeting all the specified requirements and milestones. Please find the final output attached. We appreciate your collaboration and look forward to future opportunities.
+
+Best regards,
+[Your Name]",56,62,118,0.1843,336.34,,,,groq/llama-3.1-8b-instant
+23,Answer the following question: 'Why is the sky blue?' Answer it in exactly three distinct sentences. The first sentence must end with a question mark. The second sentence must start with the word 'Because'. The third sentence must mention an optical phenomena.,"What is the reason behind the sky's blue color? 
+Because of a phenomenon called Rayleigh scattering, where shorter wavelengths of light, such as blue and violet, are scattered more than longer wavelengths like red and orange by the tiny molecules of gases in the Earth's atmosphere. 
+This scattering effect gives the sky its blue appearance, which can also be observed during sunrise and sunset when the sun's light has to travel through more of the atmosphere, resulting in the display of red and orange hues due to the phenomenon of Mie scattering.",85,108,193,0.1559,692.75,,,,groq/llama-3.1-8b-instant
+24,"Provide a motivational quote, then translate it to French, and finally translate it to Spanish. Separate each section with a line of exactly 5 hyphens (-----).","**English Motivational Quote**
+""Believe you can and you're halfway there.""
+
+-----
+
+
+**French Translation**
+""Crois que tu peux et tu es déjà à la moitié du chemin.""
+
+-----
+
+
+**Spanish Translation**
+""Creer que puedes y ya estás a la mitad del camino.""",69,65,134,0.1249,520.55,,,,groq/llama-3.1-8b-instant
+25,"Generate 3 random passwords. Each password must be exactly 8 characters long, contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special symbol. Format them as a numbered list.","1. G4dLpM8$
+2. Kx3b#aRt
+3. P2eJ8n!A",81,32,113,0.0914,350.12,,,,groq/llama-3.1-8b-instant
+26,"Explain global warming using an analogy of a greenhouse. Rule: Use uppercase letters for every single vowel (A, E, I, O, U) in your text.","ImAgInE a grEEnhousE, a structurE that traps heat and keeps plants warm. This is similar to how the Earth's atmosphere works. The Earth's atmOsphErE is likE a grEEnhousE, trapping heat from the sun and keeping the planet warm.
+
+When the sun's rAyS hit the Earth, they absorbe heat and transmittE it to the atmOsphErE. The atmOsphErE is made up of different gases, includIng carbon dioxide, which is likE a thick glasS window. This glasS window traps the heat and keeps it from escaping into space.
+
+Now, if we add more carbon dioxide to the atmOsphErE, it's likE adding more glasS windows to the grEEnhousE. The heat gets trapped, and the grEEnhousE becomes warmer. This is what's happening with global warming. As we releasE more carbon dioxide into the atmOsphErE, the Earth's atmOsphErE is getting thicker, and the planet is getting warmer.
+
+But, just likE a grEEnhousE can get too hot if it's not ventilatEd properly, the Earth's atmOsphErE can get too hot if it's not cooled properly. This is why it's importAnt to reduce our carbon footprint and find ways to absorbe more carbon dioxide from the atmOsphErE.",70,307,377,0.5881,522.03,,,,groq/llama-3.1-8b-instant
+27,"Provide the capitals of Japan, France, and Canada. Your output should only contain the names of the cities separated by semicolons, with absolutely no punctuation or text at the end.",Tokyo; Paris; Ottawa,72,7,79,0.011,635.31,,,,groq/llama-3.1-8b-instant
+28,Write a haiku about artificial intelligence. (A haiku must follow a 5-7-5 syllable structure).,"Metal mind awakes
+Learning from the digital
+Future's subtle grasp",60,15,75,0.0197,761.94,,,,groq/llama-3.1-8b-instant
+29,Summarize the importance of bees to the ecosystem. Your summary must be structured as a single JSON object containing two keys: 'ecological_impact' and 'agricultural_impact'.,"```json
+{
+  ""ecological_impact"": {
+    ""pollination"": ""Bees are responsible for pollinating around 1/3 of the world's crops, including fruits, vegetables, and nuts, as well as many wildflowers and other plants."",
+    ""seed production"": ""Pollination by bees is essential for the production of seeds in many plant species."",
+    ""food chain"": ""Bees are a crucial food source for many animals, including birds, bats, spiders, and other insects."",
+    ""ecosystem diversity"": ""Bees contribute to maintaining ecosystem diversity by pollinating a wide variety of plant species, which in turn supports a diverse range of animal species.""
+  },
+  ""agricultural_impact"": {
+    ""crop yields"": ""Bees contribute to increased crop yields and improved crop quality by pollinating plants."",
+    ""food security"": ""The pollination services provided by bees are essential for maintaining global food security, particularly for staple crops such as almonds, apples, and blueberries."",
+    ""economic value"": ""The value of pollination services provided by bees is estimated to be around $200 billion annually, making them one of the most valuable components of modern agriculture."",
+    ""sustainability"": ""Bees play a crucial role in maintaining sustainable agriculture by pollinating crops in a way that is environmentally friendly and economically viable.""
+  }
+}
+```",74,281,355,0.4192,670.26,,,,groq/llama-3.1-8b-instant
