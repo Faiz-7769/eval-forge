@@ -1,0 +1,47 @@
+# ==========================================
+# EvalForge Dependencies
+# ==========================================
+
+# --- Core API & Backend ---
+fastapi
+uvicorn
+python-dotenv
+PyYAML
+
+# --- Logging & CLI (Requested) ---
+loguru
+rich
+
+# --- Database ---
+SQLAlchemy
+
+
+# --- Model Inference Layer ---
+transformers
+# torch cuda 
+accelerate
+
+# --- Evaluation Layer ---
+deepeval
+ragas
+
+# --- Observability & Telemetry ---
+prometheus_client
+nvidia-ml-py
+
+# --- Frontend & Visualizations ---
+streamlit
+plotly
+pandas
+
+# --- APIs ---
+groq
+google-genai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
+
+# --- Notebook ---
+ipykernel
+tqdm
+hf_xet
