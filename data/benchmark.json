@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Medium",
+    "prompt": "A train leaves Station A traveling at 60 mph. Two hours later, a second train leaves Station A on the same track traveling at 90 mph. How many hours will it take the second train to catch up to the first train?",
+    "expected_answer": "4 hours. (By the time the second train starts, the first train has traveled 120 miles. The relative speed closing the gap is 90 - 60 = 30 mph. 120 miles / 30 mph = 4 hours.)"
+  },
+  {
+    "id": 2,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Hard",
+    "prompt": "If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?",
+    "expected_answer": "11 seconds. (There are 5 intervals between the 6 strikes, meaning each interval is 1 second. Striking 12 times requires 11 intervals, which takes 11 seconds.)"
+  },
+  {
+    "id": 3,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Medium",
+    "prompt": "All prompt engineers are tech enthusiasts. Some tech enthusiasts are gamers. No gamers are professional writers. Based on these rules, is it definitely true that some prompt engineers are not professional writers?",
+    "expected_answer": "No. The premise states 'some tech enthusiasts are gamers', but it does not specify if those gamers overlap with prompt engineers. Therefore, we cannot definitely conclude this relationship."
+  },
+  {
+    "id": 4,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Easy",
+    "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+    "expected_answer": "$0.05 (5 cents). (Ball = x, Bat = x + 1.00. Then x + x + 1.00 = 1.10 -> 2x = 0.10 -> x = 0.05.)"
+  },
+  {
+    "id": 5,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Medium",
+    "prompt": "If 5 machines take 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+    "expected_answer": "5 minutes. (The rate is 1 machine making 1 widget every 5 minutes. Therefore, 100 machines working simultaneously will make 100 widgets in the same 5-minute window.)"
+  },
+  {
+    "id": 6,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Hard",
+    "prompt": "You are facing two doors. One leads to freedom, the other to certain doom. One guard stands at each door; one always lies, and the other always tells the truth. You do not know which is which. You can ask exactly one guard one question. What do you ask to find the door to freedom?",
+    "expected_answer": "\"Which door would the other guard say leads to freedom?\" (Whichever door they point to, take the opposite door. The liar will lie about the truthful guard's correct choice; the truthful guard will honestly tell you the liar's incorrect choice.)"
+  },
+  {
+    "id": 7,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Medium",
+    "prompt": "A box contains 3 red apples and 7 green apples. If you select two apples at random without replacement, what is the probability that both are red?",
+    "expected_answer": "1/15 (or roughly 6.67%). (First draw: 3/10. Second draw: 2/9. (3/10) * (2/9) = 6/90 = 1/15.)"
+  },
+  {
+    "id": 8,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Easy",
+    "prompt": "Solve for x: 3x + 7 = 22.",
+    "expected_answer": "x = 5. (3x = 22 - 7 -> 3x = 15 -> x = 5.)"
+  },
+  {
+    "id": 9,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Hard",
+    "prompt": "What is the next number in the sequence: 2, 6, 12, 20, 30, 42, ...?",
+    "expected_answer": "56. (The differences between consecutive terms are increasing even numbers: +4, +6, +8, +10, +12. The next difference is +14, so 42 + 14 = 56.)"
+  },
+  {
+    "id": 10,
+    "category": "Logical Reasoning & Math",
+    "difficulty": "Medium",
+    "prompt": "A tank can be filled by Pipe A in 3 hours and drained by Pipe B in 4 hours. If both pipes are opened at the same time, how long will it take to fill an empty tank?",
+    "expected_answer": "12 hours. (Net filling rate per hour is 1/3 - 1/4 = 1/12. Therefore, it takes 12 hours to reach a full tank.)"
+  },
+  {
+    "id": 11,
+    "category": "Coding & Syntax",
+    "difficulty": "Easy",
+    "prompt": "Write a Python function named `is_palindrome` that checks if a given string is a palindrome. Return a boolean.",
+    "expected_answer": "def is_palindrome(s):\n    clean_s = ''.join(c.lower() for c in s if c.isalnum())\n    return clean_s == clean_s[::-1]"
+  },
+  {
+    "id": 12,
+    "category": "Coding & Syntax",
+    "difficulty": "Medium",
+    "prompt": "Identify the syntax or runtime error in this JavaScript code snippet and explain how to fix it:\nconst user = { name: 'Alice' };\nuser = { name: 'Bob' };",
+    "expected_answer": "TypeError: Assignment to constant variable. You cannot reassign a variable declared with `const`. To fix it, either change `const` to `let`, or modify the property directly: `user.name = 'Bob';`"
+  },
+  {
+    "id": 13,
+    "category": "Coding & Syntax",
+    "difficulty": "Medium",
+    "prompt": "What is the time complexity of looking up a key in a well-distributed Hash Map (or Python dictionary) in the average case versus the worst case?",
+    "expected_answer": "Average case: O(1) constant time. Worst case: O(n) linear time, which happens when there are heavy hash collisions and elements degrade into a linked list."
+  },
+  {
+    "id": 14,
+    "category": "Coding & Syntax",
+    "difficulty": "Hard",
+    "prompt": "Write a SQL query to find the second highest salary from an `employees` table containing columns `id` and `salary`. If there is no second highest salary, return NULL.",
+    "expected_answer": "SELECT MAX(salary) AS SecondHighestSalary FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);"
+  },
+  {
+    "id": 15,
+    "category": "Coding & Syntax",
+    "difficulty": "Medium",
+    "prompt": "In Python, what is the difference between `__init__` and `__new__` tools?",
+    "expected_answer": "`__new__` is the actual creator method that instantiates the object and returns it, while `__init__` is the initializer method that configures the newly created object attributes."
+  },
+  {
+    "id": 16,
+    "category": "Coding & Syntax",
+    "difficulty": "Easy",
+    "prompt": "What does the HTTP 403 status code represent?",
+    "expected_answer": "403 Forbidden. The server understands the request but refuses to authorize it (the client lacks necessary permissions)."
+  },
+  {
+    "id": 17,
+    "category": "Coding & Syntax",
+    "difficulty": "Hard",
+    "prompt": "Explain the concept of 'closures' in JavaScript with a brief architectural description.",
+    "expected_answer": "A closure is a feature where an inner function has access to the outer (enclosing) function's variables even after the outer function has finished executing. It preserves the scope chain dynamically."
+  },
+  {
+    "id": 18,
+    "category": "Coding & Syntax",
+    "difficulty": "Medium",
+    "prompt": "In Git, what is the functional difference between `git fetch` and `git pull`?",
+    "expected_answer": "`git fetch` downloads commits and references from a remote repository without altering your local working state. `git pull` does a `git fetch` immediately followed by a `git merge` into your active branch."
+  },
+  {
+    "id": 19,
+    "category": "Coding & Syntax",
+    "difficulty": "Easy",
+    "prompt": "What HTML tags are used to create a numbered itemized list?",
+    "expected_answer": "The `<ol>` (ordered list) tag wraps around individual `<li>` (list item) tags."
+  },
+  {
+    "id": 20,
+    "category": "Coding & Syntax",
+    "difficulty": "Hard",
+    "prompt": "Write a regular expression (Regex) that validates a standard IPv4 address configuration format.",
+    "expected_answer": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+  },
+  {
+    "id": 21,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Medium",
+    "prompt": "Write a short paragraph about traveling to Mars. Constraint: Do not use the letter 'e' anywhere in your response.",
+    "expected_answer": "Mars holds a strong pull for us. Human scouts look toward that brown world. Major craft will fly across our cosmic void to land standard tools for dynamic discovery."
+  },
+  {
+    "id": 22,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Easy",
+    "prompt": "Give me a list of three popular fruit varieties. Format your entire response strictly as a valid CSV string with headers 'Fruit' and 'Color'. Do not add conversational filler.",
+    "expected_answer": "Fruit,Color\nApple,Red\nBanana,Yellow\nBlueberry,Blue"
+  },
+  {
+    "id": 23,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Medium",
+    "prompt": "Draft a professional sign-off email for a project delivery. Your final output must contain exactly 45 words.",
+    "expected_answer": "Team, I am thrilled to confirm the successful deployment of our project today. Everyone worked exceptionally hard to reach this milestone on schedule. Please review the attached summary document for next steps. Thank you for your continued dedication to this initiative."
+  },
+  {
+    "id": 24,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Hard",
+    "prompt": "Answer the following question: 'Why is the sky blue?' Answer it in exactly three distinct sentences. The first sentence must end with a question mark. The second sentence must start with the word 'Because'. The third sentence must mention an optical phenomena.",
+    "expected_answer": "Have you ever wondered why our daytime sky exhibits a vibrant azure hue? Because sunlight encounters gas particles in our atmosphere and scatters unevenly. Short wavelengths separate out due to this atmospheric Rayleigh scattering phenomenon."
+   },
+   {
+    "id": 25,"category": "Instruction Following & Constraints",
+    "difficulty": "Easy",
+    "prompt": "Provide a motivational quote, then translate it to French, and finally translate it to Spanish. Separate each section with a line of exactly 5 hyphens (-----).",
+    "expected_answer": "Believe you can and you're halfway there.\n-----\nCroyez en vous et vous êtes déjà à mi-chemin.\n-----\nCree en ti mismo y estarás a mitad de camino."
+   },
+   {
+    "id": 26,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Medium",
+    "prompt": "Generate 3 random passwords. Each password must be exactly 8 characters long, contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special symbol. Format them as a numbered list.",
+    "expected_answer": "example : 1. aB3@kL9! 2. Xp7#mN2$ 3. Tz5&wQ8*"
+   },
+   {
+    "id": 27,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Hard",
+    "prompt": "Explain global warming using an analogy of a greenhouse. Rule: Use uppercase letters for every single vowel (A, E, I, O, U) in your text.",
+    "expected_answer": "OUr plAnEt Is lIkE A grEEnhOUsE — sUnlIght EntErs frEEly, bUt hEAt Is trAppEd InsIdE by gAsEs lIkE CO2."
+   },
+   {
+    "id": 28,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Easy",
+    "prompt": "Provide the capitals of Japan, France, and Canada. Your output should only contain the names of the cities separated by semicolons, with absolutely no punctuation or text at the end.",
+    "expected_answer": "Tokyo;Paris;Ottawa"
+   },
+   {
+    "id": 29,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Medium",
+    "prompt": "Write a haiku about artificial intelligence. (A haiku must follow a 5-7-5 syllable structure).",
+    "expected_answer": "Silicon and code, (5)\nThinking past our human sight, (7)\nMind born from the dark. (5)"
+   },
+   {
+    "id": 30,
+    "category": "Instruction Following & Constraints",
+    "difficulty": "Hard",
+    "prompt": "Summarize the importance of bees to the ecosystem. Your summary must be structured as a single JSON object containing two keys: 'ecological_impact' and 'agricultural_impact'.",
+    "expected_answer": "{\"ecological_impact\": \"Bees pollinate over 80% of flowering plants, maintaining biodiversity and ecosystem balance.\", \"agricultural_impact\": \"Bees are responsible for pollinating crops worth billions annually, directly supporting global food supply.\"}"
+   }
+]
