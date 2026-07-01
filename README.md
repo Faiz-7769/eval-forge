@@ -155,7 +155,8 @@ accelerate
 nvidia-ml-py
 python-dotenv
 ```
-
+Use torch with cuda compatibility if you would like to run the llm locally using huggingface.
+Download from official Pytorch website.
 ---
 
 ## 🔑 Environment Variables
